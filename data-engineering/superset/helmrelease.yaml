@@ -1,0 +1,15 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: superset
+  namespace: viz
+spec:
+  releaseName: superset
+  chart:
+    spec:
+      chart: superset
+      sourceRef:
+        kind: HelmRepository
+        name: superset
+        namespace: viz
+  interval: 1h0m0s

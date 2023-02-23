@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    name: weaveworks
+    project: "Weaveworks"
+    team: "system-analytics"
+    billable: 'false'
+    environment: prd
+  name: weaveworks

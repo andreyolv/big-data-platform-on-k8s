@@ -1,0 +1,45 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: sonarqube
+  namespace: sonarqube
+spec:
+  releaseName: sonarqube
+  chart:
+    spec:
+      chart: sonarqube
+      sourceRef:
+        kind: HelmRepository
+        name: sonarqube
+        namespace: sonarqube
+      version: 9.6.4
+  interval: 1h0m0s
+  install:
+    remediation:
+      retries: 3
+  # Default values
+  # https://github.com/SonarSource/helm-chart-sonarqube/blob/master/charts/sonarqube/values.yaml
+  values:
+    image:
+      repository: sonarqube
+      tag: 8.2-community
+    persistence:
+      mounts:
+        - mountPath: /opt/sonarqube/extensions/plugins
+          name: sonarqube
+          subPath: extensions/plugins
+    plugins:
+      install:
+        - "https://github.com/cnescatlab/sonar-cnes-report/releases/download/3.3.1/sonar-cnes-report-3.3.1.jar"
+          # Open Source Report Plugin for Sonar
+        - "https://github.com/SonarSource/sonar-go/releases/download/1.1.1.2000/sonar-go-plugin-1.1.1.2000.jar"
+          # SonarGo plugin for scanning
+        - "https://repo1.maven.org/maven2/org/sonarsource/scm/git/sonar-scm-git-plugin/1.12.1.2064/sonar-scm-git-plugin-1.12.1.2064.jar"
+          # Sonar GIT SCM plugin
+        - "https://repo1.maven.org/maven2/org/sonarsource/javascript/sonar-javascript-plugin/8.2.0.16042/sonar-javascript-plugin-8.2.0.16042.jar"
+          # Sonar JS Plugin
+        - "https://repo1.maven.org/maven2/org/sonarsource/python/sonar-python-plugin/3.6.0.8488/sonar-python-plugin-3.6.0.8488.jar"
+          # Sonar Python Plugin
+    service:
+      type: NodePort
+    
