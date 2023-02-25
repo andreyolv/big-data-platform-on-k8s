@@ -28,3 +28,5 @@ spec:
     timeout: 10m
     recreate: true
     cleanupOnFail: true
+  values:
+    replicas: 2
