@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: velero
-  namespace: storage
+  namespace: velero
 spec:
   chart:
     spec:
@@ -11,11 +11,11 @@ spec:
       version: 2.28.0
       sourceRef:
         kind: HelmRepository
-        name: vmware-tanzu
-        namespace: flux-system
+        name: velero
+        namespace: velero
   interval: 5m
   releaseName: velero
-  targetNamespace: storage
+  targetNamespace: velero
   # Depends on having the sealed secret to un-encrypted required secrets.
   # dependsOn:
   #   - name: sealed-secrets

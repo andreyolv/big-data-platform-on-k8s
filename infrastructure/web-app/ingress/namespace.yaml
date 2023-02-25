@@ -1,10 +1,4 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  labels:
-    name: ingress-internal
-    project: "Ingress"
-    team: "system-analytics"
-    billable: 'false'
-    environment: prd
-  name: ingress-internal
+  name: ingress

@@ -2,18 +2,18 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: demo-localhost
-  namespace: ingress-nginx
+  namespace: ingress
 spec:
   ingressClassName: nginx
   rules:
-  - host: andreyolv.dev
+  - host: andreyolv.dev.flux-ui
     http:
       paths:
       - backend:
           service:
-            name: podinfo
+            name: flux-ui-weave-gitops
             port:
-              number: 80
+              number: 9001
         path: /
         pathType: Prefix
 
