@@ -20,7 +20,11 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m0s
+<<<<<<< HEAD
   path: ./clusters/test
+=======
+  path: ./clusters/dev
+>>>>>>> 41acbaee1582c8a710c26cad83e7ef715a06fa72
   prune: true
   sourceRef:
     kind: GitRepository
