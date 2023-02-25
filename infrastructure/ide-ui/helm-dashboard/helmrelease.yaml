@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: helm-dashboard
-  namespace: komodorio
+  namespace: helm-dashboard
 spec:
   interval: 5m
   chart:
@@ -11,8 +11,8 @@ spec:
       version: 0.1.3
       sourceRef:
         kind: HelmRepository
-        name: komodorio-charts
-        namespace: komodorio
+        name: helm-dashboard
+        namespace: helm-dashboard
       interval: 5m
   values:
       persistence:

@@ -1,16 +1,16 @@
----
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: kubevious
-  namespace: flux-system
+  namespace: kubevious
 spec:
   chart:
     spec:
       chart: kubevious
       sourceRef:
         kind: HelmRepository
-        name: kubevious-repo
+        name: kubevious
+        namespace: kubevious
   interval: 5m0s
   releaseName: kubevious
   targetNamespace: kubevious

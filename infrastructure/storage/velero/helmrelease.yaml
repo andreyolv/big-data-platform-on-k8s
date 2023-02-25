@@ -16,21 +16,11 @@ spec:
   interval: 5m
   releaseName: velero
   targetNamespace: velero
-  # Depends on having the sealed secret to un-encrypted required secrets.
-  # dependsOn:
-  #   - name: sealed-secrets
-  #     namespace: kube-system
   values:
-    # image:
-    #   repository: velero/velero
-    #   tag: v1.5.2
+
     serviceAccount:
       server:
         create: true
         name: velero
     metrics:
       enabled: true
-      # todo(nlamirault) No ServiceMonitor in Chart ?
-      # https://github.com/vmware-tanzu/velero/issues/2221
-      # serviceMonitor:
-      #   enabled: true
