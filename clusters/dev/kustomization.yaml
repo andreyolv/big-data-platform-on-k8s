@@ -12,22 +12,22 @@ resources:
 
   # # Compliance
   # - kustomization/compliance/datree.yaml
-  # - kustomization/compliance/kyverno.yaml
+  - kustomization/compliance/kyverno.yaml
   # - kustomization/compliance/sonarqube.yaml
 
   # Data Engineering
-  - kustomization/data-engineering/airbyte.yaml
-  - kustomization/data-engineering/airflow.yaml
+  # - kustomization/data-engineering/airbyte.yaml
+  # - kustomization/data-engineering/airflow.yaml
   # - kustomization/data-engineering/kafka.yaml
   - kustomization/data-engineering/minio.yaml
   # - kustomization/data-engineering/mongodb.yaml
   # - kustomization/data-engineering/mysql.yaml
-  # - kustomization/data-engineering/openfaas.yaml
+  - kustomization/data-engineering/openfaas.yaml
   # - kustomization/data-engineering/pinot.yaml
   # - kustomization/data-engineering/postgres.yaml
   # - kustomization/data-engineering/redis.yaml
   # - kustomization/data-engineering/spark.yaml
-  - kustomization/data-engineering/superset
+  # - kustomization/data-engineering/superset
   - kustomization/data-engineering/trino.yaml
 
   # IDE/UI
@@ -36,7 +36,7 @@ resources:
   # - kustomization/ide-ui/komodor.yaml
   # - kustomization/ide-ui/kubevious.yaml
   # - kustomization/ide-ui/lens.yaml
-  # - kustomization/ide-ui/robusta.yaml
+  - kustomization/ide-ui/robusta.yaml
 
   # # Observability
   # - kustomization/kubernetes/reloader.yaml
@@ -64,17 +64,17 @@ resources:
   # - kustomization/orchestration/rancher.yaml
 
   # # Security
-  # - kustomization/security/cert-manager.yaml
+  - kustomization/security/cert-manager.yaml
   # - kustomization/security/falco.yaml
   # - kustomization/security/kube-bench.yaml
   # - kustomization/security/kubescape.yaml
   # - kustomization/security/teleport.yaml
-  # - kustomization/security/trivy.yaml
+  - kustomization/security/trivy.yaml
 
   # # Storage
-  # - kustomization/storage/longhorn.yaml
-  # - kustomization/storage/velero.yaml
+  - kustomization/storage/longhorn.yaml
+  - kustomization/storage/velero.yaml
 
   # # Web-app
-  # - kustomization/web-app/flagger.yaml
-  # - kustomization/web-app/ingress.yaml
+  - kustomization/web-app/flagger.yaml
+  - kustomization/web-app/ingress.yaml

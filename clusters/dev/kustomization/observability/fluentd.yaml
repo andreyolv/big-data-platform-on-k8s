@@ -1,11 +1,11 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
 kind: Kustomization
 metadata:
-  name: kube-seal
+  name: fluentd
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./kubernetes/kube-seal
+  path: ./observability/fluentd
   prune: false
   sourceRef:
     kind: GitRepository
