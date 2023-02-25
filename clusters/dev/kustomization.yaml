@@ -3,9 +3,78 @@ kind: Kustomization
 metadata:
   name: kustomize-init
 resources:
+  # # CI/CD
+  # - kustomization/cicd/crossplane.yaml
+  # - kustomization/cicd/github-actions.yaml
+  # - kustomization/cicd/skaffold.yaml
+  # - kustomization/cicd/tekton.yaml
+  # - kustomization/cicd/terraform.yaml
+
+  # # Compliance
+  # - kustomization/compliance/datree.yaml
+  # - kustomization/compliance/kyverno.yaml
+  # - kustomization/compliance/sonarqube.yaml
+
   # Data Engineering
   - kustomization/data-engineering/airbyte.yaml
+  - kustomization/data-engineering/airflow.yaml
+  # - kustomization/data-engineering/kafka.yaml
   - kustomization/data-engineering/minio.yaml
-  - kustomization/data-engineering/spark.yaml
-  #- data-engineering/superset
+  # - kustomization/data-engineering/mongodb.yaml
+  # - kustomization/data-engineering/mysql.yaml
+  # - kustomization/data-engineering/openfaas.yaml
+  # - kustomization/data-engineering/pinot.yaml
+  # - kustomization/data-engineering/postgres.yaml
+  # - kustomization/data-engineering/redis.yaml
+  # - kustomization/data-engineering/spark.yaml
+  - kustomization/data-engineering/superset
   - kustomization/data-engineering/trino.yaml
+
+  # IDE/UI
+  - kustomization/ide-ui/flux-ui.yaml
+  - kustomization/ide-ui/helm-dashboard.yaml
+  # - kustomization/ide-ui/komodor.yaml
+  # - kustomization/ide-ui/kubevious.yaml
+  # - kustomization/ide-ui/lens.yaml
+  # - kustomization/ide-ui/robusta.yaml
+
+  # # Observability
+  # - kustomization/kubernetes/reloader.yaml
+  # - kustomization/kubernetes/replicator.yaml
+  # - kustomization/kubernetes/sealed-secrets.yaml
+
+  # # Observability
+  # - kustomization/observability/elastic.yaml
+  # - kustomization/observability/fluentd.yaml
+  # - kustomization/observability/grafana.yaml
+  # - kustomization/observability/kube-prometheus-stack.yaml
+  # - kustomization/observability/litmus.yaml
+  # - kustomization/observability/loki.yaml
+  # - kustomization/observability/opencost.yaml
+  # - kustomization/observability/opentelemetry.yaml
+  # - kustomization/observability/prometheus-community.yaml
+  # - kustomization/observability/elastic.yaml
+
+  # # Orchestration
+  # - kustomization/orchestration/harbor.yaml
+  # - kustomization/orchestration/kaniko.yaml
+  # - kustomization/orchestration/keda.yaml
+  # - kustomization/orchestration/linkerd.yaml
+  # - kustomization/orchestration/portainer.yaml
+  # - kustomization/orchestration/rancher.yaml
+
+  # # Security
+  # - kustomization/security/cert-manager.yaml
+  # - kustomization/security/falco.yaml
+  # - kustomization/security/kube-bench.yaml
+  # - kustomization/security/kubescape.yaml
+  # - kustomization/security/teleport.yaml
+  # - kustomization/security/trivy.yaml
+
+  # # Storage
+  # - kustomization/storage/longhorn.yaml
+  # - kustomization/storage/velero.yaml
+
+  # # Web-app
+  # - kustomization/web-app/flagger.yaml
+  # - kustomization/web-app/ingress.yaml
