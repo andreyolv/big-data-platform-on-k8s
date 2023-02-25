@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./web-app/flagger
+  path: ./infrastructure/web-app/flagger
   prune: false
   sourceRef:
     kind: GitRepository

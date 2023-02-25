@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./observability/litmus
+  path: ./infrastructure/observability/litmus
   prune: false
   sourceRef:
     kind: GitRepository

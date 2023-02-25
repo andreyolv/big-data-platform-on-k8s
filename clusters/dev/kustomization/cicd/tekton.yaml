@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./cicd/tekton
+  path: ./infrastructure/cicd/tekton
   prune: false
   sourceRef:
     kind: GitRepository

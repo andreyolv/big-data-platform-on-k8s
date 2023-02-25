@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./security/teleport
+  path: ./infrastructure/security/teleport
   prune: false
   sourceRef:
     kind: GitRepository

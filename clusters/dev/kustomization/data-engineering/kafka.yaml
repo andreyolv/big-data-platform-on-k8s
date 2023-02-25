@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./data-engineering/kafka
+  path: ./infrastructure/data-engineering/kafka
   prune: false
   sourceRef:
     kind: GitRepository

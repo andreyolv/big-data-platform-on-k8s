@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./security/kube-bench
+  path: ./infrastructure/security/kube-bench
   prune: false
   sourceRef:
     kind: GitRepository

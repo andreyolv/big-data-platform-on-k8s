@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./observability/opentelemetry
+  path: ./infrastructure/observability/opentelemetry
   prune: false
   sourceRef:
     kind: GitRepository

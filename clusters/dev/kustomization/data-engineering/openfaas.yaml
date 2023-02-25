@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./data-engineering/openfaas
+  path: ./infrastructure/data-engineering/openfaas
   prune: false
   sourceRef:
     kind: GitRepository

@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./observability/prometheus-community
+  path: ./infrastructure/observability/prometheus-community
   prune: false
   sourceRef:
     kind: GitRepository

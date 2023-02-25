@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./ide-ui/robusta
+  path: ./infrastructure/ide-ui/robusta
   prune: false
   sourceRef:
     kind: GitRepository

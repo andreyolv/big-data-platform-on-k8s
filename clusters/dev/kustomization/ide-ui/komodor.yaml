@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./ide-ui/komodor
+  path: ./infrastructure/ide-ui/komodor
   prune: false
   sourceRef:
     kind: GitRepository

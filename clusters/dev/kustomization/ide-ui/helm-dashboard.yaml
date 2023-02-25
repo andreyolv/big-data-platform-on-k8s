@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./ide-ui/helm-dashboard
+  path: ./infrastructure/ide-ui/helm-dashboard
   prune: false
   sourceRef:
     kind: GitRepository

@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./compliance/sonarqube
+  path: ./infrastructure/compliance/sonarqube
   prune: false
   sourceRef:
     kind: GitRepository

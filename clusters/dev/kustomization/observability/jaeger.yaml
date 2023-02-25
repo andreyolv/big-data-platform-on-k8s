@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./observability/jaeger
+  path: ./infrastructure/observability/jaeger
   prune: false
   sourceRef:
     kind: GitRepository

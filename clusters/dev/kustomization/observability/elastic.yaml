@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./observability/elastic
+  path: ./infrastructure/observability/elastic
   prune: false
   sourceRef:
     kind: GitRepository

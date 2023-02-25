@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./data-engineering/redis
+  path: ./infrastructure/data-engineering/redis
   prune: false
   sourceRef:
     kind: GitRepository

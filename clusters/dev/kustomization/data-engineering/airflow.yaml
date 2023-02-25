@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./data-engineering/airflow
+  path: ./infrastructure/data-engineering/airflow
   prune: false
   sourceRef:
     kind: GitRepository
