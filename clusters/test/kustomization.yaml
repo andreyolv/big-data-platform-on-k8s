@@ -4,8 +4,8 @@ metadata:
   name: kustomize-init
 resources:
   # Data Engineering
-  - ../../data-engineering/airbyte
-  - ../../data-engineering/minio
-  - ../../data-engineering/spark
-  - ../../data-engineering/superset
-  - ../../data-engineering/trino
+  - data-engineering/airbyte.yaml
+  - data-engineering/minio.yaml
+  #- ../../data-engineering/spark
+  #- ../../data-engineering/superset
+  #- ../../data-engineering/trino
