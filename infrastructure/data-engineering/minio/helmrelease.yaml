@@ -30,3 +30,5 @@ spec:
     cleanupOnFail: true
   values:
     replicas: 2
+    rootUser: andreyolv
+    rootPassword: andreyolv
