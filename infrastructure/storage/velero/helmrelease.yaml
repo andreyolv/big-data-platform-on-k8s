@@ -12,15 +12,10 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: velero
-        namespace: velero
+        namespace: flux-system
   interval: 5m
   releaseName: velero
   targetNamespace: velero
   values:
-
-    serviceAccount:
-      server:
-        create: true
-        name: velero
-    metrics:
-      enabled: true
+    #configuration:
+      #backupStorageLocation:

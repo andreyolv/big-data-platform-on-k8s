@@ -12,7 +12,7 @@ spec:
         kind: HelmRepository
         name: robusta
         namespace: flux-system
-  interval: 1h0m0
+  interval: 5m
   values:
     sinksConfig:
     - slack_sink:
