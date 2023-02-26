@@ -26,6 +26,7 @@ resources:
   # - kustomization/data-engineering/spark.yaml
   # - kustomization/data-engineering/superset
   # - kustomization/data-engineering/trino.yaml
+  # - kustomization/data-engineering/yugabyte.yaml
 
   # IDE/UI
   - kustomization/ide-ui/flux-ui.yaml

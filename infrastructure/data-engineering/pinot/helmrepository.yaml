@@ -5,4 +5,4 @@ metadata:
   namespace: flux-system
 spec:
   interval: 30m
-  url: https://github.com/apache/pinot/tree/master/kubernetes/helm/pinot
+  url: https://raw.githubusercontent.com/apache/pinot/master/kubernetes/helm

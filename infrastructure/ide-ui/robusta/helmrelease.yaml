@@ -13,7 +13,7 @@ spec:
         name: robusta
         namespace: flux-system
   interval: 1h0m0
-  valeus:
+  values:
     sinksConfig:
     - slack_sink:
       name: main_slack_sink
