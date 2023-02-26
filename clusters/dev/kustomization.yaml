@@ -19,8 +19,8 @@ resources:
   # - kustomization/data-engineering/minio.yaml
   # - kustomization/data-engineering/mongodb.yaml
   # - kustomization/data-engineering/mysql.yaml
-  # - kustomization/data-engineering/openfaas.yaml
-  # - kustomization/data-engineering/pinot.yaml
+  - kustomization/data-engineering/openfaas.yaml
+  - kustomization/data-engineering/pinot.yaml
   # - kustomization/data-engineering/postgres.yaml
   # - kustomization/data-engineering/redis.yaml
   # - kustomization/data-engineering/spark.yaml
@@ -53,23 +53,23 @@ resources:
 
   # # Orchestration
   # - kustomization/orchestration/harbor.yaml
-  # - kustomization/orchestration/kaniko.yaml
-  # - kustomization/orchestration/keda.yaml
+  - kustomization/orchestration/kaniko.yaml
+  - kustomization/orchestration/keda.yaml
   # - kustomization/orchestration/linkerd.yaml
-  # - kustomization/orchestration/portainer.yaml
-  # - kustomization/orchestration/rancher.yaml
+  - kustomization/orchestration/portainer.yaml
+  - kustomization/orchestration/rancher.yaml
 
   # # Security
-  # - kustomization/security/cert-manager.yaml
+  - kustomization/security/cert-manager.yaml
   # - kustomization/security/falco.yaml
   # - kustomization/security/kube-bench.yaml
-  # - kustomization/security/kubescape.yaml
+  - kustomization/security/kubescape.yaml
   # - kustomization/security/teleport.yaml
   # - kustomization/security/trivy.yaml
 
   # # Storage
   # - kustomization/storage/longhorn.yaml
-  # - kustomization/storage/velero.yaml
+  - kustomization/storage/velero.yaml
 
   # # Web-app
   # - kustomization/web-app/flagger.yaml

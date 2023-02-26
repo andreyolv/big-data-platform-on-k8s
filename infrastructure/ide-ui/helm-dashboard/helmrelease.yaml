@@ -5,6 +5,7 @@ metadata:
   namespace: helm-dashboard
 spec:
   interval: 5m
+  releaseName: helm-dashboard
   chart:
     spec:
       chart: helm-dashboard
