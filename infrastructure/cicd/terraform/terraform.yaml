@@ -1,0 +1,16 @@
+apiVersion: infra.contrib.fluxcd.io/v1alpha1
+kind: Terraform
+metadata:
+  name: helloworld
+  namespace: terraform
+spec:
+  interval: 2m
+  approvePlan: "auto"
+  path: ./terraform
+  sourceRef:
+    kind: GitRepository
+    name: helloworld
+    namespace: flux-system
+  writeOutputsToSecrets:
+    name: helloworld-output
+  
