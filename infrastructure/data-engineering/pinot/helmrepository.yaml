@@ -1,8 +1,8 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
-  name: komodorio
+  name: pinot
   namespace: flux-system
 spec:
-  interval: 6h0m0s
-  url: https://helm-charts.komodor.io
+  interval: 30m
+  url: https://github.com/apache/pinot/tree/master/kubernetes/helm/pinot

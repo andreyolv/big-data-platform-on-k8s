@@ -5,13 +5,10 @@ metadata:
 resources:
   # # CI/CD
   # - kustomization/cicd/crossplane.yaml
-  # - kustomization/cicd/github-actions.yaml
-  # - kustomization/cicd/skaffold.yaml
   # - kustomization/cicd/tekton.yaml
   # - kustomization/cicd/terraform.yaml
 
   # # Compliance
-  # - kustomization/compliance/datree.yaml
   # - kustomization/compliance/kyverno.yaml
   # - kustomization/compliance/sonarqube.yaml
 
@@ -33,10 +30,9 @@ resources:
   # IDE/UI
   - kustomization/ide-ui/flux-ui.yaml
   - kustomization/ide-ui/helm-dashboard.yaml
-  # - kustomization/ide-ui/komodor.yaml
-  # - kustomization/ide-ui/kubevious.yaml
-  # - kustomization/ide-ui/lens.yaml
-  # - kustomization/ide-ui/robusta.yaml
+  - kustomization/ide-ui/komodor.yaml
+  - kustomization/ide-ui/kubevious.yaml
+  - kustomization/ide-ui/robusta.yaml
 
   # # Observability
   # - kustomization/kubernetes/reloader.yaml

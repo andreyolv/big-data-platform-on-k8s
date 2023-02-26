@@ -1,16 +1,15 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: kubevious
-  namespace: kubevious
+  name: pinot
+  namespace: flux-system
 spec:
+  releaseName: pinot
   chart:
     spec:
-      chart: kubevious
+      chart: pinot
       sourceRef:
         kind: HelmRepository
-        name: kubevious
+        name: pinot
         namespace: flux-system
-  interval: 5m0s
-  releaseName: kubevious
-  targetNamespace: kubevious
+  interval: 1h0m0s
