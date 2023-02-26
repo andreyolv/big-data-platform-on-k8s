@@ -10,7 +10,7 @@ spec:
       chart: weave-gitops
       sourceRef:
         kind: HelmRepository
-        name: weaveworks-charts
+        name: weaveworks
         namespace: weaveworks
       interval: 5m
   # https://github.com/weaveworks/weave-gitops/blob/main/charts/gitops-server/values.yaml

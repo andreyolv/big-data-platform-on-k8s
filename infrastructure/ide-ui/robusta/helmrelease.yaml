@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: robusta
-  namespace: flux-system
+  namespace: robusta
 spec:
   releaseName: robusta
   chart:
@@ -13,3 +13,12 @@ spec:
         name: robusta
         namespace: flux-system
   interval: 1h0m0s
+  valeus:
+    sinksConfig:
+    - slack_sink:
+      name: main_slack_sink
+      slack_channel: channel-name
+      api_key: secret-key    # generated with `robusta integrations slack`
+    - robusta_sink:
+      name: robusta_ui_sink
+      token: secret-api-key  # generated with `robusta gen-config`
