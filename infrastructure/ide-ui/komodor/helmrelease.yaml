@@ -1,27 +1,28 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: komodor
+  name: k8s-watcher
   namespace: komodor
 spec:
-  interval: 30m
   chart:
     spec:
       chart: k8s-watcher
-      version: "1.3.3"
+      reconcileStrategy: ChartVersion
       sourceRef:
         kind: HelmRepository
         name: komodorio
         namespace: flux-system
-      interval: 12h
+  targetNamespace: komodor
+  install:
+    createNamespace: true
+  interval: 6h0m0s
   values:
-    createNamespace: false
-    existingSecret: komodor-apikey
+    existingSecret: k8s-watcher-secret
     watcher:
-      clusterName: azure
-      allowReadingPodLogs: true
-      enableAgentTaskExecution: true
-      enableAgentTaskExecutionV2: true
-      enableHelm: true
-    helm:
-      enableActions: true  
+      actions:
+        basic: true
+        advanced: true
+        podExec: true
+      telemetry:
+        enable: false
+      clusterName: default
