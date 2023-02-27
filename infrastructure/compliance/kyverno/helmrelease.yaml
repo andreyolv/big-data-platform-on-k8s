@@ -12,7 +12,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: kyverno
-        namespace: kyverno
+        namespace: flux-system
   interval: 10m0s
   releaseName: kyverno
   targetNamespace: kyverno
@@ -33,9 +33,3 @@ spec:
     cleanupOnFail: true
   timeout: 10m
   values:
-    customLabels:
-      portefaix.xyz/version: v0.46.0
-    serviceMonitor:
-      enabled: true
-      additionalLabels:
-        monitoring: portefaix

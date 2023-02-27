@@ -33,7 +33,6 @@ spec:
   values:
     serviceAccount:
       name: falco
-    timezone: Europe/Paris
     falco:
       priority: debug
       jsonOutput: true

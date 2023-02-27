@@ -18,12 +18,4 @@ spec:
     createNamespace: true
   interval: 6h0m0s
   values:
-    #existingSecret: k8s-watcher-secret
-    #watcher:
-    #  actions:
-    #    basic: true
-    #    advanced: true
-    #    podExec: true
-    #  telemetry:
-    #    enable: false
-    #  clusterName: default
+  # https://github.com/komodorio/helm-charts/blob/master/charts/k8s-watcher/values.yaml

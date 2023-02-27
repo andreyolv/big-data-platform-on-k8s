@@ -1,0 +1,75 @@
+# # CI/CD
+# crossplane.yaml
+# tekton.yaml
+# terraform.yaml
+
+# # Compliance
+# kyverno.yaml
+# sonarqube.yaml OK
+
+# # Data Engineering
+# airbyte.yaml
+# airflow.yaml
+# kafka.yaml
+# minio.yaml OK
+# mongodb.yaml
+# mysql.yaml
+# openfaas.yaml namespaces "openfaas-fn" not found
+# pinot.yaml quase OK falta verificar os load balancers false
+# postgres.yaml
+# redis.yaml
+# spark.yaml OK
+# superset.yaml OK
+# trino.yaml OK
+# yugabyte.yaml
+
+# # IDE/UI
+# flux-ui.yaml OK
+# helm-dashboard.yaml quase OK verificar nova versão
+# komodor.yaml falta criar a apiKey e passar no values
+# kubevious.yaml OK mas achei muito ruim
+# robusta.yaml falta apikey ou token
+
+# # Kubernetes
+# reloader.yaml
+# replicator.yaml
+# sealed-secrets.yaml
+
+# # Observability
+# elastic.yaml OK
+# fluentd.yaml
+# grafana.yaml precisa gerar login e senha inicial
+# kube-prometheus-stack.yaml OK
+# litmus.yaml OK
+# loki.yaml
+# opencost.yaml
+# opentelemetry.yaml
+# prometheus-community.yaml
+# creating 23 resource(s)
+#       beginning wait for 23 resources with timeout of 5m0s
+#       PersistentVolumeClaim is not bound: prometheus-community/prometheus-community-server
+#       DaemonSet is not ready: prometheus-community/prometheus-community-prometheus-node-exporter. 0 out of 3 expected pods are ready
+
+# # Orchestration
+# harbor.yaml complicado pra caralho essa merda
+# kaniko.yaml
+# keda.yaml OK 
+# linkerd.yaml
+# portainer.yaml OK
+# rancher.yaml
+
+# # Security
+# cert-manager.yaml OK
+# falco.yaml
+# kube-bench.yaml OK
+# kubescape.yaml submitting is enabled but value for accountGuid is not defined: please register at https://cloud.armosec.io to get yours and re-run with  --set accountGuid=<your Guid>
+# teleport.yaml Helm uninstall failed: uninstall: Release not loaded: teleport: release: not found
+# trivy.yaml
+
+# # Storage
+# longhorn.yaml
+# velero.yaml
+
+# # Web-app
+# flagger.yaml
+# ingress.yaml

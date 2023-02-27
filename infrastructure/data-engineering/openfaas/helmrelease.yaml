@@ -1,4 +1,3 @@
----
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
@@ -39,29 +38,4 @@ spec:
     keepHistory: false
   maxHistory: 3
   values:
-    #basic_auth: false
-    #gateway:
-    #  image: openfaas/gateway:0.20.2-arm64
-    #  directFunctions: true
-    #oauth2Plugin:
-    #  enabled: false
-    #faasnetes:
-    #  image: openfaas/faas-netes:0.12.3-arm64
-    #operator:
-    #  image: openfaas/faas-netes:0.12.3-arm64
-    #  create: false
-    #queueWorker:
-    #  image: openfaas/queue-worker:0.11.2-arm64
-    #prometheus:
-    #  create: false
-    #alertmanager:
-    #  create: false
-    #faasIdler:
-    #  image: openfaas/faas-idler:0.3.0-arm64
-    #basicAuthPlugin:
-    #  image: openfaas/basic-auth-plugin:0.20.2-arm64
-    #  replicas: 1
-    #ingressOperator:
-    #  create: false
-    #nodeSelector:
-    #  beta.kubernetes.io/arch: arm64
+    functionNamespace: openfaas
