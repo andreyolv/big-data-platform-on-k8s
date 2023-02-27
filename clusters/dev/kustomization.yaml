@@ -16,16 +16,16 @@ resources:
   # - kustomization/data-engineering/airbyte.yaml
   # - kustomization/data-engineering/airflow.yaml
   # - kustomization/data-engineering/kafka.yaml
-  - kustomization/data-engineering/minio.yaml
+  # - kustomization/data-engineering/minio.yaml
   # - kustomization/data-engineering/mongodb.yaml
   # - kustomization/data-engineering/mysql.yaml
   - kustomization/data-engineering/openfaas.yaml
   - kustomization/data-engineering/pinot.yaml
   # - kustomization/data-engineering/postgres.yaml
   # - kustomization/data-engineering/redis.yaml
-  - kustomization/data-engineering/spark.yaml
-  - kustomization/data-engineering/superset.yaml
-  - kustomization/data-engineering/trino.yaml
+  # - kustomization/data-engineering/spark.yaml
+  # - kustomization/data-engineering/superset.yaml
+  # - kustomization/data-engineering/trino.yaml
   # - kustomization/data-engineering/yugabyte.yaml
 
   # IDE/UI
@@ -36,12 +36,12 @@ resources:
   - kustomization/ide-ui/robusta.yaml
 
   # # Observability
-  - kustomization/kubernetes/reloader.yaml
-  - kustomization/kubernetes/replicator.yaml
-  - kustomization/kubernetes/sealed-secrets.yaml
+  # - kustomization/kubernetes/reloader.yaml
+  # - kustomization/kubernetes/replicator.yaml
+  # - kustomization/kubernetes/sealed-secrets.yaml
 
   # # Observability
-  - kustomization/observability/elastic.yaml
+  # - kustomization/observability/elastic.yaml
   # - kustomization/observability/fluentd.yaml
   # - kustomization/observability/grafana.yaml
   - kustomization/observability/kube-prometheus-stack.yaml
@@ -68,9 +68,9 @@ resources:
   - kustomization/security/trivy.yaml
 
   # # Storage
-  - kustomization/storage/longhorn.yaml
-  - kustomization/storage/velero.yaml
+  # - kustomization/storage/longhorn.yaml
+  # - kustomization/storage/velero.yaml
 
   # # Web-app
-  - kustomization/web-app/flagger.yaml
-  - kustomization/web-app/ingress.yaml
+  # - kustomization/web-app/flagger.yaml
+  # - kustomization/web-app/ingress.yaml
