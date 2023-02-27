@@ -1,15 +1,16 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: armo
+  name: kubescape
   namespace: kubescape
 spec:
-  releaseName: armo
+  releaseName: kubescape
   chart:
     spec:
-      chart: armo
+      chart: armo-cluster-components
       sourceRef:
         kind: HelmRepository
         name: armo
         namespace: flux-system
   interval: 1h0m0s
+# chart deprecated  https://github.com/armosec/armo-helm

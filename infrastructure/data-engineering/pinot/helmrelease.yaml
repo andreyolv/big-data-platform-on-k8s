@@ -13,3 +13,11 @@ spec:
         name: pinot
         namespace: flux-system
   interval: 1h0m0s
+  values:
+  # https://github.com/apache/pinot/blob/master/kubernetes/helm/pinot/values.yaml
+    controller:
+      external:
+        enabled: false
+    broker:
+      external:
+        enabled: false

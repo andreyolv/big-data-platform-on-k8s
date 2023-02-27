@@ -30,5 +30,3 @@ spec:
     timeout: 1m
     cleanupOnFail: true
   values:
-    customLabels:
-      portefaix.xyz/version: v0.46.0

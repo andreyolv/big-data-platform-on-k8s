@@ -16,28 +16,4 @@ spec:
   interval: 10m0s
   releaseName: keda
   targetNamespace: keda
-  values:
-    # TODO: Keda: support for additional labels
-    # labels: kind/feature, priority/low, lifecycle/frozen, area/kubernetes
-    # https://github.com/kedacore/charts/pull/179
-
-    # additionalLabels:
-    #   portefaix.xyz/version: v0.46.0
-
-    logging:
-      operator:
-        level: info
-        format: json
-    prometheus:
-      metricServer:
-        enabled: true
-        podMonitor:
-          enabled: true
-          additionalLabels:
-            monitoring: portefaix
-      operator:
-        enabled: true
-        podMonitor:
-          enabled: true
-          additionalLabels:
-            monitoring: portefaix
+  

@@ -16,5 +16,8 @@ spec:
         namespace: flux-system
       interval: 5m
   values:
+  # https://github.com/komodorio/helm-dashboard/blob/main/charts/helm-dashboard/values.yaml
     dashboard:
       namespace: helm-dashboard
+      persistence:
+        enabled: false
