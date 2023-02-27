@@ -24,7 +24,7 @@ resources:
   # - kustomization/data-engineering/postgres.yaml
   # - kustomization/data-engineering/redis.yaml
   - kustomization/data-engineering/spark.yaml
-  - kustomization/data-engineering/superset
+  - kustomization/data-engineering/superset.yaml
   - kustomization/data-engineering/trino.yaml
   # - kustomization/data-engineering/yugabyte.yaml
 
