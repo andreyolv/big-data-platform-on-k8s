@@ -29,6 +29,10 @@ resources:
   # - kustomization/data-engineering/redis.yaml
   # - kustomization/data-engineering/yugabyte.yaml
 
+  # Development
+  # - kustomization/development/jupyter.yaml
+  # - kustomization/development/zeppelin.yaml
+
   # IDE/UI
   # - kustomization/ide-ui/flux-ui.yaml
   - kustomization/ide-ui/helm-dashboard.yaml
