@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: crossplane
-  namespace: crossplane-system
+  namespace: crossplane
 spec:
   chart:
     spec:
@@ -15,7 +15,7 @@ spec:
         namespace: flux-system
   interval: 5m
   releaseName: crossplane
-  targetNamespace: crossplane-system
+  targetNamespace: crossplane
   test:
     enable: false # Enable helm test
   install:
