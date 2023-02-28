@@ -1,9 +1,8 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
-  name: flagger
+  name: bitnami
   namespace: flux-system
 spec:
-  interval: 1h
-  url: https://flagger.app
-  timeout: 3m
+  interval: 30m
+  url: https://charts.bitnami.com/bitnami

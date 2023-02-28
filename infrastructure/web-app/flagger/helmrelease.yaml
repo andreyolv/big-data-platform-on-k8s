@@ -1,0 +1,17 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: flagger
+  namespace: flagger
+spec:
+  releaseName: flagger
+  chart:
+    spec:
+      chart: flagger
+      sourceRef:
+        kind: HelmRepository
+        name: flagger
+        namespace: flux-system
+  interval: 1h0m0s
+  values:
+  # https://github.com/fluxcd/flagger/blob/main/charts/flagger/values.yaml

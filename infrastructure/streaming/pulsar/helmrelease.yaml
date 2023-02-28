@@ -1,0 +1,17 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: pulsar
+  namespace: pulsar
+spec:
+  releaseName: pulsar
+  chart:
+    spec:
+      chart: pulsar
+      sourceRef:
+        kind: HelmRepository
+        name: pulsar
+        namespace: flux-system
+  interval: 1h0m0s
+  values:
+  # https://github.com/apache/pulsar-helm-chart/blob/master/charts/pulsar/values.yaml

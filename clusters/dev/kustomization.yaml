@@ -3,44 +3,46 @@ kind: Kustomization
 metadata:
   name: kustomize-init
 resources:
-  # # CI/CD
+  # CI/CD
   - kustomization/cicd/crossplane.yaml
   - kustomization/cicd/tekton.yaml
   # - kustomization/cicd/terraform.yaml
 
-  # # Compliance
+  # Compliance
   - kustomization/compliance/kyverno.yaml
   # - kustomization/compliance/sonarqube.yaml
 
   # Data Engineering
   - kustomization/data-engineering/airbyte.yaml
   # - kustomization/data-engineering/airflow.yaml
-  # - kustomization/data-engineering/kafka.yaml
   # - kustomization/data-engineering/minio.yaml
-  # - kustomization/data-engineering/mongodb.yaml
-  # - kustomization/data-engineering/mysql.yaml
   - kustomization/data-engineering/openfaas.yaml
-  - kustomization/data-engineering/pinot.yaml
-  # - kustomization/data-engineering/postgres.yaml
-  # - kustomization/data-engineering/redis.yaml
   # - kustomization/data-engineering/spark.yaml
   # - kustomization/data-engineering/superset.yaml
   # - kustomization/data-engineering/trino.yaml
+
+  # Databases
+  # - kustomization/data-engineering/cassandra.yaml
+  # - kustomization/data-engineering/mongodb.yaml
+  # - kustomization/data-engineering/mysql.yaml
+  # - kustomization/data-engineering/postgresql.yaml
+  # - kustomization/data-engineering/redis.yaml
   # - kustomization/data-engineering/yugabyte.yaml
 
   # IDE/UI
   # - kustomization/ide-ui/flux-ui.yaml
   - kustomization/ide-ui/helm-dashboard.yaml
+  - kustomization/ide-ui/kafka-ui.yaml
   # - kustomization/ide-ui/komodor.yaml
   # - kustomization/ide-ui/kubevious.yaml
   # - kustomization/ide-ui/robusta.yaml
 
-  # # Kubernetes
+  # Kubernetes
   - kustomization/kubernetes/reloader.yaml
   - kustomization/kubernetes/replicator.yaml
   - kustomization/kubernetes/sealed-secrets.yaml
 
-  # # Observability
+  # Observability
   # - kustomization/observability/elastic.yaml
   # - kustomization/observability/fluentd.yaml
   # - kustomization/observability/grafana.yaml
@@ -51,7 +53,7 @@ resources:
   # - kustomization/observability/opentelemetry.yaml
   - kustomization/observability/prometheus-community.yaml
 
-  # # Orchestration
+  # Orchestration
   # - kustomization/orchestration/harbor.yaml
   - kustomization/orchestration/kaniko.yaml
   # - kustomization/orchestration/keda.yaml
@@ -59,7 +61,7 @@ resources:
   # - kustomization/orchestration/portainer.yaml
   - kustomization/orchestration/rancher.yaml
 
-  # # Security
+  # Security
   # - kustomization/security/cert-manager.yaml
   - kustomization/security/falco.yaml
   # - kustomization/security/kube-bench.yaml
@@ -67,10 +69,17 @@ resources:
   - kustomization/security/teleport.yaml
   - kustomization/security/trivy.yaml
 
-  # # Storage
+  # Storage
   - kustomization/storage/longhorn.yaml
   - kustomization/storage/velero.yaml
 
-  # # Web-app
+  # Streaming
+  # - kustomization/data-engineering/kafka.yaml
+  # - kustomization/data-engineering/ksqldb.yaml
+  # - kustomization/data-engineering/pinot.yaml
+  # - kustomization/data-engineering/pulsar.yaml
+  # - kustomization/data-engineering/rabbitmq.yaml
+
+  # Web-app
   # - kustomization/web-app/flagger.yaml
   # - kustomization/web-app/ingress.yaml

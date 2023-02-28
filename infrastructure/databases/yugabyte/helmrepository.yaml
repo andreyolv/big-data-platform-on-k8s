@@ -1,9 +1,8 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
-  name: flagger
+  name: yugabytedb
   namespace: flux-system
 spec:
-  interval: 1h
-  url: https://flagger.app
-  timeout: 3m
+  interval: 5m0s
+  url: https://charts.yugabyte.com

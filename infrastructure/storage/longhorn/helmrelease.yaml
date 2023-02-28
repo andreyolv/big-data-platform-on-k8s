@@ -17,6 +17,7 @@ spec:
     remediation:
       retries: 10
   values:
+  # https://github.com/longhorn/longhorn/blob/master/chart/values.yaml
     persistence:
       defaultClass: true
       reclaimPolicy: Retain
