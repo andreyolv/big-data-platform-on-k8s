@@ -11,7 +11,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: airbyte
-        namespace: airbyte
+        namespace: flux-system
   interval: 5m
   install:
     timeout: 10m
