@@ -11,7 +11,7 @@ spec:
       chart: cassandra
       sourceRef:
         kind: HelmRepository
-        name: cassandra
+        name: bitnami
         namespace: flux-system
       interval: 1m
   install:

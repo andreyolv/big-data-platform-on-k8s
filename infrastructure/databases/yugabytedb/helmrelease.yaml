@@ -9,7 +9,7 @@ spec:
   chart:
     spec:
       chart: yugabyte
-      version: "v1.5.2"
+      version: 2.17.0
       sourceRef:
         kind: HelmRepository
         name: yugabytedb
