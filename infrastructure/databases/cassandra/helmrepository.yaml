@@ -1,8 +1,8 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
-  name: cassandra
+  name: bitnami
   namespace: flux-system
 spec:
-  interval: 5m0s
-  url: https://helm.k8ssandra.io/stable
+  interval: 30m
+  url: https://charts.bitnami.com/bitnami

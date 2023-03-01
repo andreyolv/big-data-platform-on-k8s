@@ -14,5 +14,9 @@ spec:
         name: rancher
         namespace: flux-system
       interval: 1m
+    install:
+    timeout: 10m
+    remediation:
+      retries: 3
   values:
   # https://github.com/rancher/rancher/blob/release/v2.7/chart/values.yaml

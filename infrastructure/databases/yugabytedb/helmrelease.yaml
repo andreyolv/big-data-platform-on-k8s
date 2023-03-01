@@ -16,6 +16,9 @@ spec:
         namespace: flux-system
       interval: 1m
   install:
+    timeout: 10m
+    remediation:
+      retries: 3
     createNamespace: true
   upgrade:
     remediation:

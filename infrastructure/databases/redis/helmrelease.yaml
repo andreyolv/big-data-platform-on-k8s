@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: redis
-  namespace: default
+  namespace: redis
 spec:
   interval: 15m
   chart:
@@ -15,6 +15,9 @@ spec:
         namespace: flux-system
   maxHistory: 3
   install:
+    crds: CreateReplace
+    # CreateNamespace tells the Helm install action to create the HelmReleaseSpec.TargetNamespace if it does not exist yet.
+    # CAUTION: Can be a limitation if you require specific namespace labels or annotations to exist; EG. PodSecurity
     createNamespace: true
     disableWait: false
     remediation:

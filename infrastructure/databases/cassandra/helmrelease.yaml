@@ -8,8 +8,7 @@ spec:
   targetNamespace: cassandra
   chart:
     spec:
-      chart: k8ssandra-operator
-      version: "v1.5.2"
+      chart: cassandra
       sourceRef:
         kind: HelmRepository
         name: cassandra
@@ -20,10 +19,6 @@ spec:
   upgrade:
     remediation:
       remediateLastFailure: true
-  test:
-    enable: true
   values:
-  # https://github.com/k8ssandra/k8ssandra-operator/blob/main/charts/k8ssandra-operator/values.yaml
-    fullnameOverride: "cassandra-operator"
-    global:
-      clusterScoped: true
+  # https://github.com/bitnami/charts/blob/main/bitnami/cassandra/values.yaml
+    
