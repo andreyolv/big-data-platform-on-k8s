@@ -14,7 +14,7 @@ spec:
         name: rancher
         namespace: flux-system
       interval: 1m
-    install:
+  install:
     timeout: 10m
     remediation:
       retries: 3
