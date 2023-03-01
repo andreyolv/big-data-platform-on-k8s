@@ -1,10 +1,10 @@
 # # CI/CD
-# crossplane.yaml
+# crossplane.yaml OK
 # tekton.yaml
 # terraform.yaml
 
 # # Compliance
-# kyverno.yaml
+# kyverno.yaml OK
 # sonarqube.yaml OK
 
 # # Data Engineering
@@ -35,6 +35,10 @@
 # replicator.yaml
 # sealed-secrets.yaml
 
+# Notebooks
+# jupyter.yaml
+# zeppelin.yaml documentação super merda e não funciona
+
 # # Observability
 # elastic.yaml OK
 # fluentd.yaml
@@ -64,11 +68,12 @@
 # kube-bench.yaml OK
 # kubescape.yaml submitting is enabled but value for accountGuid is not defined: please register at https://cloud.armosec.io to get yours and re-run with  --set accountGuid=<your Guid>
 # teleport.yaml Helm uninstall failed: uninstall: Release not loaded: teleport: release: not found
-# trivy.yaml
+# trivy.yaml OK
 
 # # Storage
-# longhorn.yaml
-# velero.yaml
+# longhorn.yaml Helm install failed: unable to build kubernetes objects from release manifest: resource mapping not found for name: "longhorn-psp" namespace: "" from "": no matches for kind "PodSecurityPolicy" in version "policy/v1beta1"
+      #ensure CRDs are installed first
+# velero.yaml precisa prencher oq ta no values lá
 
 # # Web-app
 # flagger.yaml

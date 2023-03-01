@@ -1,7 +1,7 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: jupyterhub
+  name: jupyter
   namespace: jupyter
 spec:
   interval: 5m
@@ -18,3 +18,6 @@ spec:
       retries: 5
   values:
   # https://github.com/jupyterhub/zero-to-jupyterhub-k8s/blob/main/jupyterhub/values.yaml
+    proxy:
+      service:
+        type: ClusterIP

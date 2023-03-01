@@ -7,7 +7,7 @@ spec:
   interval: 1m
   chart:
     spec:
-      chart: rancher
+      chart: .
       version: "2.7.2"
       sourceRef:
         kind: HelmRepository
@@ -15,4 +15,4 @@ spec:
         namespace: flux-system
       interval: 1m
   values:
-  #https://github.com/rancher/rancher/blob/release/v2.7/chart/values.yaml
+  # https://github.com/rancher/rancher/blob/release/v2.7/chart/values.yaml

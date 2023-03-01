@@ -38,4 +38,8 @@ spec:
     keepHistory: false
   maxHistory: 3
   values:
+  # https://github.com/openfaas/faas-netes/blob/master/chart/openfaas/values.yaml
     functionNamespace: openfaas
+    dashboard:
+      enabled: true
+      publicURL: "localhost"
