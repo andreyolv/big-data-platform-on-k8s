@@ -56,6 +56,7 @@ resources:
   # - kustomization/observability/opencost.yaml
   - kustomization/observability/opentelemetry.yaml
   # - kustomization/observability/prometheus-community.yaml
+  # - kustomization/observability/promtail.yaml
 
   # Orchestration
   # - kustomization/orchestration/harbor.yaml
@@ -78,11 +79,12 @@ resources:
   # - kustomization/storage/velero.yaml
 
   # Streaming
-  # - kustomization/data-engineering/kafka.yaml
-  # - kustomization/data-engineering/ksqldb.yaml
-  - kustomization/data-engineering/pinot.yaml
-  - kustomization/data-engineering/pulsar.yaml
-  - kustomization/data-engineering/rabbitmq.yaml
+  # - kustomization/streaming/kafka.yaml
+  # - kustomization/streaming/ksqldb.yaml
+  - kustomization/streaming/pinot.yaml
+  - kustomization/streaming/pulsar.yaml
+  - kustomization/streaming/rabbitmq.yaml
+  - kustomization/streaming/schema-registry.yaml
 
   # Web-app
   # - kustomization/web-app/flagger.yaml
