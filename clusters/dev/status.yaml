@@ -12,16 +12,21 @@
 # airflow.yaml
 # kafka.yaml
 # minio.yaml OK
-# mongodb.yaml
-# mysql.yaml
 # openfaas.yaml namespaces "openfaas-fn" not found
 # pinot.yaml quase OK falta verificar os load balancers false
-# postgres.yaml
-# redis.yaml
 # spark.yaml OK
 # superset.yaml OK
 # trino.yaml OK
-# yugabyte.yaml
+
+# Databases
+# cassandra.yaml OK
+# mongodb.yaml OK
+# mysql.yaml OK
+# postgresql.yaml OK
+# redis.yaml OK
+#Helm install failed: unable to build kubernetes objects from release manifest: resource mapping not found for name: "redis" namespace: "redis" from "": no matches for kind "ServiceMonitor" in version "monitoring.coreos.com/v1"
+ #     ensure CRDs are installed first
+# yugabytedb.yaml OK
 
 # # IDE/UI
 # flux-ui.yaml OK
@@ -60,7 +65,7 @@
 # keda.yaml OK 
 # linkerd.yaml
 # portainer.yaml OK
-# rancher.yaml
+# rancher.yaml chart requires kubeVersion: < 1.25.0-0 which is incompatible with Kubernetes v1.25.3, tentar usar latest
 
 # # Security
 # cert-manager.yaml OK

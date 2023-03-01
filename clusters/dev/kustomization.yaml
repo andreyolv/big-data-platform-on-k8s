@@ -22,10 +22,10 @@ resources:
   # - kustomization/data-engineering/trino.yaml
 
   # Databases
-  - kustomization/databases/cassandra.yaml
-  - kustomization/databases/mongodb.yaml
-  - kustomization/databases/mysql.yaml
-  - kustomization/databases/postgresql.yaml
+  # - kustomization/databases/cassandra.yaml
+  # - kustomization/databases/mongodb.yaml
+  # - kustomization/databases/mysql.yaml
+  # - kustomization/databases/postgresql.yaml
   - kustomization/databases/redis.yaml
   - kustomization/databases/yugabytedb.yaml
 
@@ -43,7 +43,7 @@ resources:
   # - kustomization/kubernetes/sealed-secrets.yaml
 
   # Notebooks
-  - kustomization/notebooks/jupyter.yaml
+  # - kustomization/notebooks/jupyter.yaml
   # - kustomization/notebooks/zeppelin.yaml
 
   # Observability

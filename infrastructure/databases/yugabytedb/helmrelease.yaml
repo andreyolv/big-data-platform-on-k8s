@@ -26,4 +26,5 @@ spec:
   test:
     enable: true
   values:
+  # https://artifacthub.io/packages/helm/yugabyte/yugabyte
   # https://github.com/yugabyte/charts/blob/master/stable/yugabyte/values.yaml

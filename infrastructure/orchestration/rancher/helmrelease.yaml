@@ -19,4 +19,5 @@ spec:
     remediation:
       retries: 3
   values:
+  # https://artifacthub.io/packages/helm/rancher-stable/rancher
   # https://github.com/rancher/rancher/blob/release/v2.7/chart/values.yaml
