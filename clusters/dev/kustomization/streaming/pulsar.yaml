@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./infrastructure/streaming/pinot
+  path: ./infrastructure/streaming/pulsar
   prune: false
   sourceRef:
     kind: GitRepository
