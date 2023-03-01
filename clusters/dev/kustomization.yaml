@@ -22,12 +22,12 @@ resources:
   # - kustomization/data-engineering/trino.yaml
 
   # Databases
-  - kustomization/data-engineering/cassandra.yaml
-  - kustomization/data-engineering/mongodb.yaml
-  - kustomization/data-engineering/mysql.yaml
-  - kustomization/data-engineering/postgresql.yaml
-  - kustomization/data-engineering/redis.yaml
-  - kustomization/data-engineering/yugabyte.yaml
+  - kustomization/databases/cassandra.yaml
+  - kustomization/databases/mongodb.yaml
+  - kustomization/databases/mysql.yaml
+  - kustomization/databases/postgresql.yaml
+  - kustomization/databases/redis.yaml
+  - kustomization/databases/yugabyte.yaml
 
   # IDE/UI
   # - kustomization/ide-ui/flux-ui.yaml
