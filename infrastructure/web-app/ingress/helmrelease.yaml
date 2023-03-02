@@ -15,6 +15,7 @@ spec:
         namespace: ingress
       interval: 3m
   values:
+  # https://github.com/kubernetes/ingress-nginx/blob/main/charts/ingress-nginx/values.yaml
     controller:
       service:
         type: ClusterIP

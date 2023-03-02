@@ -20,5 +20,5 @@ spec:
   values:
   # https://github.com/apache/pulsar-helm-chart/blob/master/charts/pulsar/values.yaml
     proxy:
-      serverce:
+      service:
         type: ClusterIP
