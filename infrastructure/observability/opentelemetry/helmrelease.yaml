@@ -11,10 +11,9 @@ spec:
       version: ">=0.6"
       sourceRef:
         kind: HelmRepository
-        name: opentelemetry
+        name: open-telemetry
         namespace: flux-system
       interval: 1m
-  valuesFrom:
-    - kind: ConfigMap
-      name: configmap-opentelemetry-collector
   targetNamespace: opentelemetry
+  values:
+  # https://github.com/open-telemetry/opentelemetry-helm-charts/tree/main/charts

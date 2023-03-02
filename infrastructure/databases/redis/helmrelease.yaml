@@ -16,6 +16,7 @@ spec:
   maxHistory: 3
   install:
     crds: CreateReplace
+    timeout: 10m
     # CreateNamespace tells the Helm install action to create the HelmReleaseSpec.TargetNamespace if it does not exist yet.
     # CAUTION: Can be a limitation if you require specific namespace labels or annotations to exist; EG. PodSecurity
     createNamespace: true

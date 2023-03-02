@@ -9,13 +9,14 @@ spec:
   chart:
     spec:
       chart: helm-dashboard
-      version: 1.1.1
+      #version: 1.1.1
       sourceRef:
         kind: HelmRepository
         name: helm-dashboard
         namespace: flux-system
       interval: 5m
   values:
+  # https://artifacthub.io/packages/helm-plugin/helm-dashboard/dashboard
   # https://github.com/komodorio/helm-dashboard/blob/main/charts/helm-dashboard/values.yaml
   # https://github.com/komodorio/helm-charts/blob/master/charts/helm-dashboard/values.yaml
     dashboard:

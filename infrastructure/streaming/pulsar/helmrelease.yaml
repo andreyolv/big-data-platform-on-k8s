@@ -12,6 +12,10 @@ spec:
         kind: HelmRepository
         name: pulsar
         namespace: flux-system
-  interval: 1h0m0s
+  interval: 5m
+  install:
+    timeout: 10m
+    remediation:
+      retries: 3
   values:
   # https://github.com/apache/pulsar-helm-chart/blob/master/charts/pulsar/values.yaml

@@ -28,3 +28,8 @@ spec:
   values:
   # https://artifacthub.io/packages/helm/yugabyte/yugabyte
   # https://github.com/yugabyte/charts/blob/master/stable/yugabyte/values.yaml
+    serviceEndpoints:
+      - name: "yb-master-ui"
+        type: ClusterIP
+      - name: "yb-tserver-service"
+        type: ClusterIP

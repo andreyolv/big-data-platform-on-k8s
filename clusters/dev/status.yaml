@@ -12,8 +12,8 @@
 # airflow.yaml
 # kafka.yaml
 # minio.yaml OK
-# openfaas.yaml namespaces "openfaas-fn" not found
-# pinot.yaml quase OK falta verificar os load balancers false
+# openfaas.yaml OK
+# pinot.yaml quase OK 
 # spark.yaml OK
 # superset.yaml OK
 # trino.yaml OK
@@ -26,7 +26,7 @@
 # redis.yaml OK
 #Helm install failed: unable to build kubernetes objects from release manifest: resource mapping not found for name: "redis" namespace: "redis" from "": no matches for kind "ServiceMonitor" in version "monitoring.coreos.com/v1"
  #     ensure CRDs are installed first
-# yugabytedb.yaml OK
+# yugabytedb.yaml 
 
 # # IDE/UI
 # flux-ui.yaml OK
@@ -51,8 +51,8 @@
 # kube-prometheus-stack.yaml OK
 # litmus.yaml OK
 # loki.yaml
-# opencost.yaml
-# opentelemetry.yaml
+# opencost.yaml OK 
+# opentelemetry.yaml verificar qual chart collector or operator
 # prometheus-community.yaml
 # creating 23 resource(s)
 #       beginning wait for 23 resources with timeout of 5m0s
