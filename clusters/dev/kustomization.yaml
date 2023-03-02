@@ -27,7 +27,7 @@ resources:
   # - kustomization/databases/mysql.yaml
   # - kustomization/databases/postgresql.yaml
   - kustomization/databases/redis.yaml
-  - kustomization/databases/yugabytedb.yaml
+  # - kustomization/databases/yugabytedb.yaml
 
   # IDE/UI
   # - kustomization/ide-ui/flux-ui.yaml

@@ -19,3 +19,6 @@ spec:
       retries: 3
   values:
   # https://github.com/apache/pulsar-helm-chart/blob/master/charts/pulsar/values.yaml
+    proxy:
+      serverce:
+        type: ClusterIP

@@ -26,7 +26,7 @@
 # redis.yaml OK
 #Helm install failed: unable to build kubernetes objects from release manifest: resource mapping not found for name: "redis" namespace: "redis" from "": no matches for kind "ServiceMonitor" in version "monitoring.coreos.com/v1"
  #     ensure CRDs are installed first
-# yugabytedb.yaml 
+# yugabytedb.yaml OK
 
 # # IDE/UI
 # flux-ui.yaml OK
