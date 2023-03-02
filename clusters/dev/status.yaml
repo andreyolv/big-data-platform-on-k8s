@@ -1,57 +1,20 @@
 # # CI/CD
-# crossplane.yaml OK
 # tekton.yaml
-# terraform.yaml
-
-# # Compliance
-# kyverno.yaml OK
-# sonarqube.yaml OK
 
 # # Data Engineering
 # airbyte.yaml
 # airflow.yaml
-# kafka.yaml
-# minio.yaml OK
-# openfaas.yaml OK
-# pinot.yaml quase OK 
-# spark.yaml OK
-# superset.yaml OK
-# trino.yaml OK
-
-# Databases
-# cassandra.yaml OK
-# mongodb.yaml OK
-# mysql.yaml OK
-# postgresql.yaml OK
-# redis.yaml OK
-#Helm install failed: unable to build kubernetes objects from release manifest: resource mapping not found for name: "redis" namespace: "redis" from "": no matches for kind "ServiceMonitor" in version "monitoring.coreos.com/v1"
- #     ensure CRDs are installed first
-# yugabytedb.yaml OK
+# redis.yaml 
 
 # # IDE/UI
-# flux-ui.yaml OK
 # helm-dashboard.yaml quase OK verificar nova versão
 # komodor.yaml falta criar a apiKey e passar no values
-# kubevious.yaml OK mas achei muito ruim
 # robusta.yaml falta apikey ou token
 
-# # Kubernetes
-# reloader.yaml
-# replicator.yaml
-# sealed-secrets.yaml
-
-# Notebooks
-# jupyter.yaml
-# zeppelin.yaml documentação super merda e não funciona
-
 # # Observability
-# elastic.yaml OK
 # fluentd.yaml
 # grafana.yaml precisa gerar login e senha inicial
-# kube-prometheus-stack.yaml OK
-# litmus.yaml OK
 # loki.yaml
-# opencost.yaml OK 
 # opentelemetry.yaml verificar qual chart collector or operator
 # prometheus-community.yaml
 # creating 23 resource(s)
@@ -62,18 +25,12 @@
 # # Orchestration
 # harbor.yaml complicado pra caralho essa merda
 # kaniko.yaml
-# keda.yaml OK 
 # linkerd.yaml
-# portainer.yaml OK
 # rancher.yaml chart requires kubeVersion: < 1.25.0-0 which is incompatible with Kubernetes v1.25.3, tentar usar latest
 
 # # Security
-# cert-manager.yaml OK
-# falco.yaml
-# kube-bench.yaml OK
 # kubescape.yaml submitting is enabled but value for accountGuid is not defined: please register at https://cloud.armosec.io to get yours and re-run with  --set accountGuid=<your Guid>
 # teleport.yaml Helm uninstall failed: uninstall: Release not loaded: teleport: release: not found
-# trivy.yaml OK
 
 # # Storage
 # longhorn.yaml Helm install failed: unable to build kubernetes objects from release manifest: resource mapping not found for name: "longhorn-psp" namespace: "" from "": no matches for kind "PodSecurityPolicy" in version "policy/v1beta1"

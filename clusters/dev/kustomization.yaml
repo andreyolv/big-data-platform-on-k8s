@@ -81,11 +81,11 @@ resources:
   # Streaming
   # - kustomization/streaming/kafka.yaml
   # - kustomization/streaming/ksqldb.yaml
-  - kustomization/streaming/pinot.yaml
+  # - kustomization/streaming/pinot.yaml
   - kustomization/streaming/pulsar.yaml
   - kustomization/streaming/rabbitmq.yaml
   # - kustomization/streaming/schema-registry.yaml
 
   # Web-app
   # - kustomization/web-app/flagger.yaml
-  # - kustomization/web-app/ingress.yaml
+  - kustomization/web-app/ingress.yaml
