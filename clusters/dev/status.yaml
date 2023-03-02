@@ -21,6 +21,7 @@
 #       beginning wait for 23 resources with timeout of 5m0s
 #       PersistentVolumeClaim is not bound: prometheus-community/prometheus-community-server
 #       DaemonSet is not ready: prometheus-community/prometheus-community-prometheus-node-exporter. 0 out of 3 expected pods are ready
+# promtail
 
 # # Orchestration
 # harbor.yaml complicado pra caralho essa merda

@@ -40,7 +40,4 @@ spec:
     replica:
       persistence:
         enabled: false
-    metrics:
-      enabled: true
-      serviceMonitor:
-        enabled: true
+    
