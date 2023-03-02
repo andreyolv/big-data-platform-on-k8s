@@ -7,7 +7,6 @@
 # redis.yaml 
 
 # # IDE/UI
-# helm-dashboard.yaml quase OK verificar nova versão
 # komodor.yaml falta criar a apiKey e passar no values
 # robusta.yaml falta apikey ou token
 
