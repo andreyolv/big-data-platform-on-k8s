@@ -16,15 +16,5 @@ spec:
       interval: 3m
   values:
     controller:
-      config:
-        http2-max-field-size: "32k"
-        large-client-header-buffers: "4 64k"
-      replicaCount: 2
-      resources:
-        requests:
-          memory: 256Mi
-          cpu: 200m
-    defaultBackend:
-      resources:
-        requests:
-          memory: 32Mi
+      service:
+        type: ClusterIP
