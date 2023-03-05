@@ -5,7 +5,7 @@ metadata:
 resources:
   # CI/CD
   # - kustomization/cicd/crossplane.yaml
-  # - kustomization/cicd/tekton.yaml
+  - kustomization/cicd/tekton.yaml
   # - kustomization/cicd/terraform.yaml
 
   # Compliance
@@ -26,7 +26,7 @@ resources:
   # - kustomization/databases/mongodb.yaml
   # - kustomization/databases/mysql.yaml
   # - kustomization/databases/postgresql.yaml
-  - kustomization/databases/redis.yaml
+  # - kustomization/databases/redis.yaml
   # - kustomization/databases/yugabytedb.yaml
 
   # IDE/UI
@@ -68,6 +68,7 @@ resources:
 
   # Security
   # - kustomization/security/cert-manager.yaml
+  - kustomization/security/cilium.yaml
   # - kustomization/security/falco.yaml
   # - kustomization/security/kube-bench.yaml
   # - kustomization/security/kubescape.yaml
@@ -82,10 +83,10 @@ resources:
   # - kustomization/streaming/kafka.yaml
   # - kustomization/streaming/ksqldb.yaml
   # - kustomization/streaming/pinot.yaml
-  - kustomization/streaming/pulsar.yaml
-  - kustomization/streaming/rabbitmq.yaml
+  # - kustomization/streaming/pulsar.yaml
+  # - kustomization/streaming/rabbitmq.yaml
   # - kustomization/streaming/schema-registry.yaml
 
   # Web-app
   # - kustomization/web-app/flagger.yaml
-  - kustomization/web-app/ingress.yaml
+  # - kustomization/web-app/ingress.yaml
