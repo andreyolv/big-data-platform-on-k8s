@@ -18,4 +18,4 @@ spec:
         namespace: flux-system
       interval: 5m
   values:
-    installCRDs: true
+    # https://github.com/tektoncd/operator/blob/main/chart/values.yaml
