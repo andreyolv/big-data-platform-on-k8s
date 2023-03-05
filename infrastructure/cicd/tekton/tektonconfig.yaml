@@ -2,8 +2,9 @@ apiVersion: operator.tekton.dev/v1alpha1
   kind: TektonConfig
   metadata:
     name: config
+    namespace: tekton
   spec:
-    targetNamespace: tekton-pipelines
+    targetNamespace: tekton
     profile: all
     config:
       nodeSelector: <>
@@ -29,4 +30,4 @@ apiVersion: operator.tekton.dev/v1alpha1
       keep: 3
       schedule: "* * * * *"
     dashboard:
-      readonly: true
+      readonly: false
