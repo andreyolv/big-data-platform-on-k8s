@@ -5,6 +5,8 @@ metadata:
   namespace: longhorn
 spec:
   interval: 2m
+  releaseName: longhorn
+  targetNamespace: longhorn
   chart:
     spec:
       chart: longhorn
