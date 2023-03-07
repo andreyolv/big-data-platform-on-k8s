@@ -29,7 +29,7 @@ Choose what do you want to deploy uncommenting [this file](https://github.com/an
 Done :)
 
 # BIG DATA & DEVOPS PLATFORM ON KUBERNETES CONTAINS:
-# CI/CD
+# CI/CD & IaC
 crossplane
 tekton
 terraform
