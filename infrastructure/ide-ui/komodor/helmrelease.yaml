@@ -19,3 +19,11 @@ spec:
   interval: 6h0m0s
   values:
   # https://github.com/komodorio/helm-charts/blob/master/charts/k8s-watcher/values.yaml
+    existingSecret: komodor-apikey
+    #apiKey: 
+    watcher:
+      actions:
+        basic: True
+        advanced: True
+        podExec: True
+      clusterName: default

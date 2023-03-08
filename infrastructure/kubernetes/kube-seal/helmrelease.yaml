@@ -20,30 +20,6 @@ spec:
   upgrade:
     crds: CreateReplace
   values:
-    initFile: |-
-      if [ "$1" == "development-mode" ]; then
-        /usr/local/bin/superset-init --username admin --firstname admin --lastname user --email admin@fab.org --password admin
-        superset run
-      elif [ "$1" == "production-mode" ]; then
-        superset db upgrade
-        superset init
-        gunicorn \
-            -w 10 \
-            -k gevent \
-            --timeout 300 \
-            -b  0.0.0.0:8088 \
-            --limit-request-line 0 \
-            --limit-request-field_size 0 \
-            "superset.app:create_app()"
-      else
-        echo "You need to specify which mode to start in by setting production-mode"
-        echo "or development-mode in extraArguments."
-        exit 1
-      fi
-    #nodeSelector:
-    #  agentpool: sysephem
-    #tolerations:
-    #  - effect: NoSchedule
-    #    key: CriticalAddonsOnly
-    #    operator: Equal
-    #    value: "true"
+  # https://artifacthub.io/packages/helm/bitnami-labs/sealed-secrets
+  # https://github.com/bitnami-labs/sealed-secrets/blob/main/helm/sealed-secrets/values.yaml
+    

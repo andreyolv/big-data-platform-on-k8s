@@ -23,6 +23,7 @@ resources:
 
   # Databases
   # - kustomization/databases/cassandra.yaml
+  - kustomization/databases/cloudbeaver.yaml
   # - kustomization/databases/mongodb.yaml
   # - kustomization/databases/mysql.yaml
   # - kustomization/databases/postgresql.yaml

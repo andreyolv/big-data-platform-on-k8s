@@ -22,8 +22,6 @@ spec:
         scrape_timeout: 10s
         metrics_path: /metrics
         scheme: http
-        dns_sd_configs:
-        - names:
-          - opencost.opencost
-          type: 'A'
-          port: 9003
+        static_configs:
+        - targets:
+          - opencost.opencost:9003
