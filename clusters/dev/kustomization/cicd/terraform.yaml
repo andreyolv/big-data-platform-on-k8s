@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./infrastructure/cicd/terraform
+  path: ./infrastructure/cicd-iac/terraform
   prune: false
   sourceRef:
     kind: GitRepository
