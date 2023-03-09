@@ -22,4 +22,5 @@ spec:
   values:
   # https://artifacthub.io/packages/helm/longhorn/longhorn
   # https://github.com/longhorn/longhorn/blob/master/chart/values.yaml
+    enablePSP: true
     
