@@ -15,4 +15,5 @@ spec:
         namespace: flux-system
       interval: 5m
   values:
+  # https://artifacthub.io/packages/helm/grafana/promtail
   # https://github.com/grafana/helm-charts/blob/main/charts/promtail/values.yaml

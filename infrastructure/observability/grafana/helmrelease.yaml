@@ -14,3 +14,8 @@ spec:
         kind: HelmRepository
         name: grafana
         namespace: flux-system
+  values:
+  # https://artifacthub.io/packages/helm/grafana/grafana
+  # https://github.com/grafana/helm-charts/blob/main/charts/grafana/values.yaml
+    adminUser: andreyolv
+    adminPassword: andreyolv

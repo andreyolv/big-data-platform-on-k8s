@@ -16,4 +16,5 @@ spec:
   releaseName: loki
   targetNamespace: loki
   values:
+  # https://artifacthub.io/packages/helm/grafana/loki
   # https://github.com/grafana/loki/blob/main/production/helm/loki/values.yaml
