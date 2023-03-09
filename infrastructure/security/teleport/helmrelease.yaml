@@ -6,7 +6,6 @@ metadata:
 spec:
   chart:
     spec:
-      # renovate: registryUrl=https://charts.releases.teleport.dev
       chart: teleport-cluster
       version: 11.3.4
       sourceRef:
@@ -34,3 +33,5 @@ spec:
   timeout: 10m
   values:
   # https://github.com/gravitational/teleport/blob/master/examples/chart/teleport-cluster/values.yaml
+    persistence:
+      enabled: false

@@ -19,3 +19,5 @@ spec:
   # https://github.com/grafana/helm-charts/blob/main/charts/grafana/values.yaml
     adminUser: andreyolv
     adminPassword: andreyolv
+    #admin:
+    #  existingSecret: grafana-admin-secret
