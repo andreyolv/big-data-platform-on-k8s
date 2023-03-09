@@ -16,3 +16,6 @@ spec:
   releaseName: mysql
   values:
   # https://github.com/bitnami/charts/blob/main/bitnami/mysql/values.yaml
+    auth: 
+      username: andreyolv
+      password: andreyolv
