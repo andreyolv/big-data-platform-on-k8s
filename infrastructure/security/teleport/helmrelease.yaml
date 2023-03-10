@@ -32,6 +32,8 @@ spec:
     cleanupOnFail: true
   timeout: 10m
   values:
+  # https://artifacthub.io/packages/helm/teleport-agent-kube/teleport-cluster
   # https://github.com/gravitational/teleport/blob/master/examples/chart/teleport-cluster/values.yaml
+    clusterName: teleport-cluster
     persistence:
       enabled: false
