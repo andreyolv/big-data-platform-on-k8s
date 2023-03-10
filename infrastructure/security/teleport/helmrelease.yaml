@@ -37,3 +37,5 @@ spec:
     clusterName: teleport-cluster
     persistence:
       enabled: false
+    service:
+      type: ClusterIP
