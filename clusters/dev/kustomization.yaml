@@ -68,17 +68,17 @@ resources:
  #- kustomization/orchestration/rancher.yaml
 
   # Security
-  - kustomization/security/cert-manager.yaml
+  #- kustomization/security/cert-manager.yaml
   - kustomization/security/cilium.yaml
-  - kustomization/security/falco.yaml
-  - kustomization/security/kube-bench.yaml
-  - kustomization/security/kubescape.yaml
+  #- kustomization/security/falco.yaml
+  #- kustomization/security/kube-bench.yaml
+  # kustomization/security/kubescape.yaml
   - kustomization/security/teleport.yaml
-  - kustomization/security/trivy.yaml
+  #- kustomization/security/trivy.yaml
 
   # Storage
-  - kustomization/storage/longhorn.yaml
-  - kustomization/storage/velero.yaml
+  #- kustomization/storage/longhorn.yaml
+  #- kustomization/storage/velero.yaml
 
   ## Streaming
   #- kustomization/streaming/kafka.yaml
