@@ -77,7 +77,7 @@ resources:
   #- kustomization/security/trivy.yaml
 
   # Storage
-  #- kustomization/storage/longhorn.yaml
+  - kustomization/storage/longhorn.yaml
   #- kustomization/storage/velero.yaml
 
   ## Streaming
