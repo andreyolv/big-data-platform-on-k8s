@@ -12,7 +12,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: apache-airflow
-        namespace: airflow
+        namespace: flux-system
   values:
   # https://artifacthub.io/packages/helm/apache-airflow/airflow
   # https://github.com/apache/airflow/blob/main/chart/values.yaml

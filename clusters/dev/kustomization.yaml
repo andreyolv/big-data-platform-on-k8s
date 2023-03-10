@@ -4,68 +4,68 @@ metadata:
   name: kustomize-init
 resources:
   # CI/CD
-  - kustomization/cicd-iac/crossplane.yaml
-  - kustomization/cicd-iac/tekton.yaml
-  - kustomization/cicd-iac/terraform.yaml
+ #- kustomization/cicd-iac/crossplane.yaml
+ #- kustomization/cicd-iac/tekton.yaml
+ #- kustomization/cicd-iac/terraform.yaml
 
-  # Compliance
-  - kustomization/compliance/kyverno.yaml
-  - kustomization/compliance/sonarqube.yaml
+ ## Compliance
+ #- kustomization/compliance/kyverno.yaml
+ #- kustomization/compliance/sonarqube.yaml
 
-  # Data Engineering
-  - kustomization/data-engineering/airbyte.yaml
-  - kustomization/data-engineering/airflow.yaml
-  - kustomization/data-engineering/minio.yaml
-  - kustomization/data-engineering/openfaas.yaml
-  - kustomization/data-engineering/spark.yaml
-  - kustomization/data-engineering/superset.yaml
-  - kustomization/data-engineering/trino.yaml
+ ## Data Engineering
+ #- kustomization/data-engineering/airbyte.yaml
+ #- kustomization/data-engineering/airflow.yaml
+ #- kustomization/data-engineering/minio.yaml
+ #- kustomization/data-engineering/openfaas.yaml
+ #- kustomization/data-engineering/spark.yaml
+ #- kustomization/data-engineering/superset.yaml
+ #- kustomization/data-engineering/trino.yaml
 
-  # Databases
-  - kustomization/databases/cassandra.yaml
-  - kustomization/databases/cloudbeaver.yaml
-  - kustomization/databases/mongodb.yaml
-  - kustomization/databases/mysql.yaml
-  - kustomization/databases/postgresql.yaml
-  - kustomization/databases/redis.yaml
-  - kustomization/databases/yugabytedb.yaml
+ ## Databases
+ #- kustomization/databases/cassandra.yaml
+ #- kustomization/databases/cloudbeaver.yaml
+ #- kustomization/databases/mongodb.yaml
+ #- kustomization/databases/mysql.yaml
+ #- kustomization/databases/postgresql.yaml
+ #- kustomization/databases/redis.yaml
+ #- kustomization/databases/yugabytedb.yaml
 
-  # IDE/UI
-  - kustomization/ide-ui/flux-ui.yaml
-  - kustomization/ide-ui/helm-dashboard.yaml
-  - kustomization/ide-ui/kafka-ui.yaml
-  - kustomization/ide-ui/komodor.yaml
-  - kustomization/ide-ui/kubevious.yaml
-  - kustomization/ide-ui/robusta.yaml
+ ## IDE/UI
+ #- kustomization/ide-ui/flux-ui.yaml
+ #- kustomization/ide-ui/helm-dashboard.yaml
+ #- kustomization/ide-ui/kafka-ui.yaml
+ #- kustomization/ide-ui/komodor.yaml
+ #- kustomization/ide-ui/kubevious.yaml
+ #- kustomization/ide-ui/robusta.yaml
 
-  # Kubernetes
-  - kustomization/kubernetes/reloader.yaml
-  - kustomization/kubernetes/replicator.yaml
-  - kustomization/kubernetes/sealed-secrets.yaml
+ ## Kubernetes
+ #- kustomization/kubernetes/reloader.yaml
+ #- kustomization/kubernetes/replicator.yaml
+ #- kustomization/kubernetes/sealed-secrets.yaml
 
-  # Notebooks
-  - kustomization/notebooks/jupyter.yaml
-  - kustomization/notebooks/zeppelin.yaml
+ ## Notebooks
+ #- kustomization/notebooks/jupyter.yaml
+ #- kustomization/notebooks/zeppelin.yaml
 
-  # Observability
-  - kustomization/observability/elastic.yaml
-  - kustomization/observability/fluentd.yaml
-  - kustomization/observability/grafana.yaml
-  - kustomization/observability/kube-prometheus-stack.yaml
-  - kustomization/observability/litmus.yaml 
-  - kustomization/observability/loki.yaml
-  - kustomization/observability/opencost.yaml
-  - kustomization/observability/opentelemetry.yaml
-  - kustomization/observability/prometheus-community.yaml
-  - kustomization/observability/promtail.yaml
+ ## Observability
+ #- kustomization/observability/elastic.yaml
+ #- kustomization/observability/fluentd.yaml
+ #- kustomization/observability/grafana.yaml
+ #- kustomization/observability/kube-prometheus-stack.yaml
+ #- kustomization/observability/litmus.yaml 
+ #- kustomization/observability/loki.yaml
+ #- kustomization/observability/opencost.yaml
+ #- kustomization/observability/opentelemetry.yaml
+ #- kustomization/observability/prometheus-community.yaml
+ #- kustomization/observability/promtail.yaml
 
-  # Orchestration
-  - kustomization/orchestration/harbor.yaml
-  - kustomization/orchestration/kaniko.yaml
-  - kustomization/orchestration/keda.yaml
-  - kustomization/orchestration/linkerd.yaml
-  - kustomization/orchestration/portainer.yaml
-  - kustomization/orchestration/rancher.yaml
+ ## Orchestration
+ #- kustomization/orchestration/harbor.yaml
+ #- kustomization/orchestration/kaniko.yaml
+ #- kustomization/orchestration/keda.yaml
+ #- kustomization/orchestration/linkerd.yaml
+ #- kustomization/orchestration/portainer.yaml
+ #- kustomization/orchestration/rancher.yaml
 
   # Security
   - kustomization/security/cert-manager.yaml
@@ -80,14 +80,14 @@ resources:
   - kustomization/storage/longhorn.yaml
   - kustomization/storage/velero.yaml
 
-  # Streaming
-  - kustomization/streaming/kafka.yaml
-  - kustomization/streaming/ksqldb.yaml
-  - kustomization/streaming/pinot.yaml
-  - kustomization/streaming/pulsar.yaml
-  - kustomization/streaming/rabbitmq.yaml
-  - kustomization/streaming/schema-registry.yaml
+  ## Streaming
+  #- kustomization/streaming/kafka.yaml
+  #- kustomization/streaming/ksqldb.yaml
+  #- kustomization/streaming/pinot.yaml
+  #- kustomization/streaming/pulsar.yaml
+  #- kustomization/streaming/rabbitmq.yaml
+  #- kustomization/streaming/schema-registry.yaml
 
-  # Web-app
-  - kustomization/web-app/flagger.yaml
-  - kustomization/web-app/ingress.yaml
+  ## Web-app
+  #- kustomization/web-app/flagger.yaml
+  #- kustomization/web-app/ingress.yaml

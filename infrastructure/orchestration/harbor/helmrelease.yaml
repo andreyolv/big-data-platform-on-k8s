@@ -12,7 +12,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: harbor
-        namespace: harbor
+        namespace: flux-system
   values:
   # https://artifacthub.io/packages/helm/harbor/harbor
   # https://github.com/goharbor/harbor-helm/blob/master/values.yaml

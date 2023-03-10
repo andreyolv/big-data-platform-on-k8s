@@ -10,5 +10,6 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: elastic
+        namespace: flux-system
       version: 2.1.0
   interval: 24h
