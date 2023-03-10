@@ -8,8 +8,8 @@ resources:
   - linkerd-viz.yaml
   - linkerd-smi.yaml
   - linkerd-certs.yaml
-  - repositories.yaml
-  - namespaces.yaml
+  - helmrepository.yaml
+  - namespace.yaml
 secretGenerator:
   - name: linkerd-trust-anchor
     namespace: linkerd
