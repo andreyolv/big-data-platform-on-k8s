@@ -41,8 +41,7 @@
 # teleport.yaml Helm uninstall failed: uninstall: Release not loaded: teleport: release: not found
 
 # # Storage
-# longhorn.yaml Helm install failed: unable to build kubernetes objects from release manifest: resource mapping not found for name: "longhorn-psp" namespace: "" from "": no matches for kind "PodSecurityPolicy" in version "policy/v1beta1"
-      #ensure CRDs are installed first
+# longhorn.yaml
 # velero.yaml precisa prencher oq ta no values lá
 
 # # Web-app
