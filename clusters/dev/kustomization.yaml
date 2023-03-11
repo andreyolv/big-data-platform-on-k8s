@@ -14,9 +14,9 @@ resources:
 
   ## Data Engineering
   #- kustomization/data-engineering/airbyte.yaml
-  #- kustomization/data-engineering/airflow.yaml
+  - kustomization/data-engineering/airflow.yaml
   #- kustomization/data-engineering/minio.yaml
-  #- kustomization/data-engineering/openfaas.yaml
+  - kustomization/data-engineering/openfaas.yaml
   #- kustomization/data-engineering/spark.yaml
   #- kustomization/data-engineering/superset.yaml
   #- kustomization/data-engineering/trino.yaml
@@ -44,23 +44,24 @@ resources:
   #- kustomization/kubernetes/sealed-secrets.yaml
 
   ## Notebooks
-  #- kustomization/notebooks/jupyter.yaml
+  - kustomization/notebooks/jupyter.yaml
   #- kustomization/notebooks/zeppelin.yaml
 
   ## Observability
-  - kustomization/observability/elastic.yaml
-  - kustomization/observability/fluentd.yaml
-  - kustomization/observability/grafana.yaml
-  - kustomization/observability/kube-prometheus-stack.yaml
-  - kustomization/observability/litmus.yaml 
-  - kustomization/observability/loki.yaml
-  - kustomization/observability/opencost.yaml
+  #- kustomization/observability/elastic.yaml
+  #- kustomization/observability/fluentd.yaml
+  #- kustomization/observability/grafana.yaml
+  #- kustomization/observability/kube-prometheus-stack.yaml
+  #- kustomization/observability/litmus.yaml 
+  #- kustomization/observability/loki.yaml
+  - kustomization/observability/loki-stack.yaml
+  #- kustomization/observability/opencost.yaml
   - kustomization/observability/opentelemetry.yaml
-  - kustomization/observability/prometheus-community.yaml
-  - kustomization/observability/promtail.yaml
+  #- kustomization/observability/prometheus-community.yaml
+  #- kustomization/observability/promtail.yaml
 
   ## Orchestration
-  #- kustomization/orchestration/harbor.yaml
+  - kustomization/orchestration/harbor.yaml
   #- kustomization/orchestration/kaniko.yaml
   #- kustomization/orchestration/keda.yaml
   #- kustomization/orchestration/linkerd.yaml
@@ -77,7 +78,7 @@ resources:
   #- kustomization/security/trivy.yaml
 
   # Storage
-  #- kustomization/storage/longhorn.yaml
+  - kustomization/storage/longhorn.yaml
   #- kustomization/storage/velero.yaml
 
   ## Streaming

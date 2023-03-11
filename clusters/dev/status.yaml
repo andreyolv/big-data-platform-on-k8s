@@ -7,7 +7,11 @@
 # keda
 # cloudbeaver
 # mysql
-
+# grafana como importar graficos/json via helm chart
+# prometheus-community
+# elastic
+# promtail
+# loki
 
 # # Data Engineering
 # airbyte.yaml
@@ -20,14 +24,8 @@
 
 # # Observability
 # fluentd.yaml
-# grafana.yaml precisa gerar login e senha inicial
 # loki.yaml
 # opentelemetry.yaml verificar qual chart collector or operator
-# prometheus-community.yaml
-# creating 23 resource(s)
-#       beginning wait for 23 resources with timeout of 5m0s
-#       PersistentVolumeClaim is not bound: prometheus-community/prometheus-community-server
-#       DaemonSet is not ready: prometheus-community/prometheus-community-prometheus-node-exporter. 0 out of 3 expected pods are ready
 # promtail
 
 # # Orchestration

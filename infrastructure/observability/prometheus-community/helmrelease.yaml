@@ -18,13 +18,13 @@ spec:
     server:
       persistentVolume:
         enabled: false
-    extraScrapeConfigs: |
-      - job_name: opencost
-        honor_labels: true
-        scrape_interval: 1m
-        scrape_timeout: 10s
-        metrics_path: /metrics
-        scheme: http
-        static_configs:
-        - targets:
-          - opencost.opencost:9003
+    #extraScrapeConfigs: |
+    #  - job_name: opencost
+    #    honor_labels: true
+    #    scrape_interval: 1m
+    #    scrape_timeout: 10s
+    #    metrics_path: /metrics
+    #    scheme: http
+    #    static_configs:
+    #    - targets:
+    #      - opencost.opencost:9003

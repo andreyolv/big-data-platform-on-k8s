@@ -11,5 +11,8 @@ spec:
         kind: HelmRepository
         name: elastic
         namespace: flux-system
-      version: 2.1.0
+      version: 2.6
   interval: 24h
+  values:
+  # https://artifacthub.io/packages/helm/elastic/eck-operator
+  # https://github.com/elastic/cloud-on-k8s
