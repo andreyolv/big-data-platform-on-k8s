@@ -13,7 +13,7 @@
   #- kustomization/data-engineering/minio.yaml
   #- kustomization/data-engineering/openfaas.yaml
   #- kustomization/data-engineering/spark.yaml
-  #- kustomization/data-engineering/superset.yaml
+  #- kustomization/data-engineering/superset.yaml | OK
   #- kustomization/data-engineering/trino.yaml
 
   ## Databases
