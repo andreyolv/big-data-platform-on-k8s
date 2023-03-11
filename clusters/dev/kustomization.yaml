@@ -10,7 +10,7 @@ resources:
 
   ## Compliance
   - kustomization/compliance/kyverno.yaml
-  - kustomization/compliance/sonarqube.yaml
+  #- kustomization/compliance/sonarqube.yaml
 
   ## Data Engineering
   - kustomization/data-engineering/airbyte.yaml
@@ -31,7 +31,7 @@ resources:
   #- kustomization/databases/yugabytedb.yaml
 
   ## IDE/UI
-  - kustomization/ide-ui/flux-ui.yaml
+  #- kustomization/ide-ui/flux-ui.yaml
   #- kustomization/ide-ui/helm-dashboard.yaml
   - kustomization/ide-ui/kafka-ui.yaml
   #- kustomization/ide-ui/komodor.yaml
@@ -49,7 +49,7 @@ resources:
 
   ## Observability
   #- kustomization/observability/elastic.yaml
-  - kustomization/observability/fluentd.yaml
+  #- kustomization/observability/fluentd.yaml
   #- kustomization/observability/grafana.yaml
   - kustomization/observability/kube-prometheus-stack.yaml
   #- kustomization/observability/litmus.yaml 
@@ -70,7 +70,7 @@ resources:
 
   # Security
   - kustomization/security/cert-manager.yaml
-  - kustomization/security/cilium.yaml
+  #- kustomization/security/cilium.yaml
   - kustomization/security/falco.yaml
   #- kustomization/security/kube-bench.yaml
   #- kustomization/security/kubescape.yaml
@@ -91,4 +91,4 @@ resources:
 
   ## Web-app
   - kustomization/web-app/flagger.yaml
-  - kustomization/web-app/ingress.yaml
+  #- kustomization/web-app/ingress.yaml

@@ -44,7 +44,7 @@
 
   ## Observability
   #- kustomization/observability/elastic.yaml | OK
-  #- kustomization/observability/fluentd.yaml
+  #- kustomization/observability/fluentd.yaml | OK
   #- kustomization/observability/grafana.yaml | como importar gdashs.json via helm chart
   #- kustomization/observability/kube-prometheus-stack.yaml
   #- kustomization/observability/litmus.yaml | OK
@@ -65,7 +65,7 @@
 
   # Security
   #- kustomization/security/cert-manager.yaml
-  #- kustomization/security/cilium.yaml
+  #- kustomization/security/cilium.yaml | OK
   #- kustomization/security/falco.yaml
   #- kustomization/security/kube-bench.yaml | estudar CIS Kubernetes Benchmark e security
   #- kustomization/security/kubescape.yaml | please register at https://cloud.armosec.io to get yours and re-run with  --set accountGuid=<your Guid>
@@ -86,4 +86,4 @@
 
   ## Web-app
   #- kustomization/web-app/flagger.yaml
-  #- kustomization/web-app/ingress.yaml
+  #- kustomization/web-app/ingress.yaml | como fazer localhost

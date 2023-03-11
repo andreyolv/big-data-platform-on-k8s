@@ -21,8 +21,8 @@ spec:
   # https://github.com/jupyterhub/zero-to-jupyterhub-k8s/blob/main/jupyterhub/values.yaml
     hub:
       config:
-        JupyterHub:
-          admin_access: false
+        Authenticator:
+          auto_login: true
     proxy:
       service:
         type: ClusterIP

@@ -33,3 +33,5 @@ spec:
     cleanupOnFail: true
   timeout: 10m
   values:
+  # https://artifacthub.io/packages/helm/kyverno/kyverno
+  # https://github.com/kyverno/kyverno/blob/main/charts/kyverno/values.yaml
