@@ -22,20 +22,20 @@ resources:
   #- kustomization/data-engineering/trino.yaml
 
   ## Databases
-  #- kustomization/databases/cassandra.yaml
+  - kustomization/databases/cassandra.yaml
   #- kustomization/databases/cloudbeaver.yaml
-  #- kustomization/databases/mongodb.yaml
+  - kustomization/databases/mongodb.yaml
   #- kustomization/databases/mysql.yaml
-  #- kustomization/databases/postgresql.yaml
+  - kustomization/databases/postgresql.yaml
   #- kustomization/databases/redis.yaml
-  #- kustomization/databases/yugabytedb.yaml
+  - kustomization/databases/yugabytedb.yaml
 
   ## IDE/UI
-  #- kustomization/ide-ui/flux-ui.yaml
+  - kustomization/ide-ui/flux-ui.yaml
   #- kustomization/ide-ui/helm-dashboard.yaml
   #- kustomization/ide-ui/kafka-ui.yaml
   #- kustomization/ide-ui/komodor.yaml
-  #- kustomization/ide-ui/kubevious.yaml
+  - kustomization/ide-ui/kubevious.yaml
   #- kustomization/ide-ui/robusta.yaml
 
   ## Kubernetes
@@ -52,9 +52,9 @@ resources:
   #- kustomization/observability/fluentd.yaml
   #- kustomization/observability/grafana.yaml
   #- kustomization/observability/kube-prometheus-stack.yaml
-  #- kustomization/observability/litmus.yaml 
+  - kustomization/observability/litmus.yaml 
   #- kustomization/observability/loki.yaml
-  - kustomization/observability/loki-stack.yaml
+  #- kustomization/observability/loki-stack.yaml
   #- kustomization/observability/opencost.yaml
   - kustomization/observability/opentelemetry.yaml
   #- kustomization/observability/prometheus-community.yaml
@@ -65,17 +65,17 @@ resources:
   #- kustomization/orchestration/kaniko.yaml
   #- kustomization/orchestration/keda.yaml
   #- kustomization/orchestration/linkerd.yaml
-  #- kustomization/orchestration/portainer.yaml
+  - kustomization/orchestration/portainer.yaml
   - kustomization/orchestration/rancher.yaml
 
   # Security
   #- kustomization/security/cert-manager.yaml
-  #- kustomization/security/cilium.yaml
-  #- kustomization/security/falco.yaml
-  #- kustomization/security/kube-bench.yaml
+  - kustomization/security/cilium.yaml
+  - kustomization/security/falco.yaml
+  - kustomization/security/kube-bench.yaml
   #- kustomization/security/kubescape.yaml
   #- kustomization/security/teleport.yaml
-  #- kustomization/security/trivy.yaml
+  - kustomization/security/trivy.yaml
 
   # Storage
   - kustomization/storage/longhorn.yaml
@@ -83,11 +83,11 @@ resources:
 
   ## Streaming
   #- kustomization/streaming/kafka.yaml
-  #- kustomization/streaming/ksqldb.yaml
-  #- kustomization/streaming/pinot.yaml
+  - kustomization/streaming/ksqldb.yaml
+  - kustomization/streaming/pinot.yaml
   #- kustomization/streaming/pulsar.yaml
   #- kustomization/streaming/rabbitmq.yaml
-  #- kustomization/streaming/schema-registry.yaml
+  - kustomization/streaming/schema-registry.yaml
 
   ## Web-app
   #- kustomization/web-app/flagger.yaml
