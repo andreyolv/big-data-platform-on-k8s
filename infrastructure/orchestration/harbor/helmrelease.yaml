@@ -23,5 +23,5 @@ spec:
           commonName: harbor
     persistence:
       enabled: false
-    existingSecretAdminPasswordKey: andreyolv
+    existingSecretAdminPassword: andreyolv
     harborAdminPassword: andreyolv
