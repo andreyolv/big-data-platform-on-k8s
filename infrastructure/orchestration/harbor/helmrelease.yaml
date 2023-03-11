@@ -19,9 +19,9 @@ spec:
     expose:
       type: clusterIP
       tls:
+        enabled: false
         auto:
           commonName: harbor
     persistence:
       enabled: false
-    existingSecretAdminPassword: andreyolv
     harborAdminPassword: andreyolv
