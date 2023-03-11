@@ -12,7 +12,7 @@
   #- kustomization/data-engineering/airflow.yaml
   #- kustomization/data-engineering/minio.yaml | OK
   #- kustomization/data-engineering/openfaas.yaml
-  #- kustomization/data-engineering/spark.yaml
+  #- kustomization/data-engineering/spark.yaml | OK
   #- kustomization/data-engineering/superset.yaml | OK
   #- kustomization/data-engineering/trino.yaml | OK
 
@@ -22,13 +22,13 @@
   #- kustomization/databases/mongodb.yaml | validar acesso ao banco
   #- kustomization/databases/mysql.yaml | OK
   #- kustomization/databases/postgresql.yaml | validar acesso ao banco
-  #- kustomization/databases/redis.yaml
+  #- kustomization/databases/redis.yaml | validar acesso ao banco
   #- kustomization/databases/yugabytedb.yaml | OK
 
   ## IDE/UI
   #- kustomization/ide-ui/flux-ui.yaml | OK
   #- kustomization/ide-ui/helm-dashboard.yaml | não funciona com flux
-  #- kustomization/ide-ui/kafka-ui.yaml
+  #- kustomization/ide-ui/kafka-ui.yaml | OK
   #- kustomization/ide-ui/komodor.yaml | falta criar a apiKey e passar no values
   #- kustomization/ide-ui/kubevious.yaml | OK
   #- kustomization/ide-ui/robusta.yaml | falta apikey ou token
@@ -39,14 +39,14 @@
   #- kustomization/kubernetes/sealed-secrets.yaml
 
   ## Notebooks
-  #- kustomization/notebooks/jupyter.yaml
+  #- kustomization/notebooks/jupyter.yaml | validar login
   #- kustomization/notebooks/zeppelin.yaml
 
   ## Observability
   #- kustomization/observability/elastic.yaml | OK
   #- kustomization/observability/fluentd.yaml | OK
   #- kustomization/observability/grafana.yaml | como importar gdashs.json via helm chart
-  #- kustomization/observability/kube-prometheus-stack.yaml
+  #- kustomization/observability/kube-prometheus-stack.yaml | OK
   #- kustomization/observability/litmus.yaml | OK
   #- kustomization/observability/loki.yaml | OK
   #- kustomization/observability/loki-stack.yaml | OK
@@ -60,8 +60,8 @@
   #- kustomization/orchestration/kaniko.yaml
   #- kustomization/orchestration/keda.yaml | OK
   #- kustomization/orchestration/linkerd.yaml | precisa cert-manager
-  #- kustomization/orchestration/portainer.yaml | não loga na pagina
-  #- kustomization/orchestration/rancher.yaml
+  #- kustomization/orchestration/portainer.yaml | OK
+  #- kustomization/orchestration/rancher.yaml | validar login
 
   # Security
   #- kustomization/security/cert-manager.yaml
@@ -70,7 +70,7 @@
   #- kustomization/security/kube-bench.yaml | estudar CIS Kubernetes Benchmark e security
   #- kustomization/security/kubescape.yaml | please register at https://cloud.armosec.io to get yours and re-run with  --set accountGuid=<your Guid>
   #- kustomization/security/teleport.yaml | Helm uninstall failed: uninstall: Release not loaded: teleport: release: not found
-  #- kustomization/security/trivy.yaml
+  #- kustomization/security/trivy.yaml | OKSS
 
   # Storage
   #- kustomization/storage/longhorn.yaml
