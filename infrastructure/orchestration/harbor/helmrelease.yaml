@@ -18,6 +18,9 @@ spec:
   # https://github.com/goharbor/harbor-helm/blob/master/values.yaml
     expose:
       type: clusterIP
+      tls:
+        auto:
+          commonName: harbor
     persistence:
       enabled: false
     existingSecretAdminPasswordKey: andreyolv
