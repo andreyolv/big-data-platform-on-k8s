@@ -39,13 +39,13 @@ resources:
   #- kustomization/ide-ui/robusta.yaml
 
   ## Kubernetes
-  - kustomization/kubernetes/reloader.yaml
-  - kustomization/kubernetes/replicator.yaml
-  - kustomization/kubernetes/sealed-secrets.yaml
+  #- kustomization/kubernetes/reloader.yaml
+  #- kustomization/kubernetes/replicator.yaml
+  #- kustomization/kubernetes/sealed-secrets.yaml
 
   ## Notebooks
-  - kustomization/notebooks/jupyter.yaml
-  - kustomization/notebooks/zeppelin.yaml
+  #- kustomization/notebooks/jupyter.yaml
+  #- kustomization/notebooks/zeppelin.yaml
 
   ## Observability
   #- kustomization/observability/elastic.yaml
@@ -82,12 +82,12 @@ resources:
   #- kustomization/storage/velero.yaml
 
   ## Streaming
-  - kustomization/streaming/kafka.yaml
-  - kustomization/streaming/ksqldb.yaml
-  - kustomization/streaming/pinot.yaml
-  - kustomization/streaming/pulsar.yaml
-  - kustomization/streaming/rabbitmq.yaml
-  - kustomization/streaming/schema-registry.yaml
+  #- kustomization/streaming/kafka.yaml
+  #- kustomization/streaming/ksqldb.yaml
+  #- kustomization/streaming/pinot.yaml
+  #- kustomization/streaming/pulsar.yaml
+  #- kustomization/streaming/rabbitmq.yaml
+  #- kustomization/streaming/schema-registry.yaml
 
   ## Web-app
   - kustomization/web-app/flagger.yaml
