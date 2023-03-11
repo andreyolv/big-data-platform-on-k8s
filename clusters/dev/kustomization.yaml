@@ -61,12 +61,12 @@ resources:
   #- kustomization/observability/promtail.yaml
 
   ## Orchestration
-  - kustomization/orchestration/harbor.yaml
+  #- kustomization/orchestration/harbor.yaml
   #- kustomization/orchestration/kaniko.yaml
   #- kustomization/orchestration/keda.yaml
   #- kustomization/orchestration/linkerd.yaml
   #- kustomization/orchestration/portainer.yaml
-  #- kustomization/orchestration/rancher.yaml
+  - kustomization/orchestration/rancher.yaml
 
   # Security
   #- kustomization/security/cert-manager.yaml

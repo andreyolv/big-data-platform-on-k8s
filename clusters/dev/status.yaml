@@ -12,6 +12,7 @@
 # elastic
 # promtail
 # loki
+# harbor login e senha não funciona
 
 # # Data Engineering
 # airbyte.yaml
@@ -29,7 +30,6 @@
 # promtail
 
 # # Orchestration
-# harbor.yaml complicado pra caralho essa merda
 # kaniko.yaml
 # linkerd.yaml
 # rancher.yaml chart requires kubeVersion: < 1.25.0-0 which is incompatible with Kubernetes v1.25.3, tentar usar latest
