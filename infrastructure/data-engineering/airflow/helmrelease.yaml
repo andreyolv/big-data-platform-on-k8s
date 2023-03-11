@@ -13,6 +13,10 @@ spec:
         kind: HelmRepository
         name: apache-airflow
         namespace: flux-system
+  install:
+    timeout: 15m
+    remediation:
+      retries: 3
   values:
   # https://artifacthub.io/packages/helm/apache-airflow/airflow
   # https://github.com/apache/airflow/blob/main/chart/values.yaml

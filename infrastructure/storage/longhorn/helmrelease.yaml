@@ -17,8 +17,9 @@ spec:
         namespace: flux-system
       interval: 5m
   install:
+    timeout: 10m
     remediation:
-      retries: 10
+      retries: 3
   values:
   # https://artifacthub.io/packages/helm/longhorn/longhorn
   # https://github.com/longhorn/longhorn/blob/master/chart/values.yaml

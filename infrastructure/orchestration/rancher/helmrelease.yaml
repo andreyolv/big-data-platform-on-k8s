@@ -21,3 +21,5 @@ spec:
   values:
   # https://artifacthub.io/packages/helm/rancher-stable/rancher
   # https://github.com/rancher/rancher/blob/release/v2.7/chart/values.yaml
+    ingress:
+      enabled: false
