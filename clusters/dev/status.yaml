@@ -34,13 +34,13 @@
   #- kustomization/ide-ui/robusta.yaml | falta apikey ou token
 
   ## Kubernetes
-  #- kustomization/kubernetes/reloader.yaml
-  #- kustomization/kubernetes/replicator.yaml
-  #- kustomization/kubernetes/sealed-secrets.yaml
+  #- kustomization/kubernetes/reloader.yaml | OK
+  #- kustomization/kubernetes/replicator.yaml | OK
+  #- kustomization/kubernetes/sealed-secrets.yaml | OK
 
   ## Notebooks
   #- kustomization/notebooks/jupyter.yaml | validar login
-  #- kustomization/notebooks/zeppelin.yaml
+  #- kustomization/notebooks/zeppelin.yaml | "docker.io/library/zeppelin-server:0.11.0-SNAPSHOT": pull access denied
 
   ## Observability
   #- kustomization/observability/elastic.yaml | OK
@@ -61,16 +61,16 @@
   #- kustomization/orchestration/keda.yaml | OK
   #- kustomization/orchestration/linkerd.yaml | precisa cert-manager
   #- kustomization/orchestration/portainer.yaml | OK
-  #- kustomization/orchestration/rancher.yaml | validar login
+  #- kustomization/orchestration/rancher.yaml | OK
 
   # Security
-  #- kustomization/security/cert-manager.yaml
+  #- kustomization/security/cert-manager.yaml | como gerar certificados
   #- kustomization/security/cilium.yaml | OK
   #- kustomization/security/falco.yaml
   #- kustomization/security/kube-bench.yaml | estudar CIS Kubernetes Benchmark e security
   #- kustomization/security/kubescape.yaml | please register at https://cloud.armosec.io to get yours and re-run with  --set accountGuid=<your Guid>
   #- kustomization/security/teleport.yaml | Helm uninstall failed: uninstall: Release not loaded: teleport: release: not found
-  #- kustomization/security/trivy.yaml | OKSS
+  #- kustomization/security/trivy.yaml | OK
 
   # Storage
   #- kustomization/storage/longhorn.yaml
@@ -81,7 +81,7 @@
   #- kustomization/streaming/ksqldb.yaml
   #- kustomization/streaming/pinot.yaml
   #- kustomization/streaming/pulsar.yaml
-  #- kustomization/streaming/rabbitmq.yaml
+  #- kustomization/streaming/rabbitmq.yaml | subiu operator, falta cluster
   #- kustomization/streaming/schema-registry.yaml
 
   ## Web-app
