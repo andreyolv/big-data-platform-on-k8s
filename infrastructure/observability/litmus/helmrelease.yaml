@@ -29,4 +29,8 @@ spec:
     timeout: 1m
     cleanupOnFail: true
   values:
+  # https://artifacthub.io/packages/helm/litmuschaos/litmus
   # https://github.com/litmuschaos/litmus-helm/blob/master/charts/litmus/values.yaml
+    adminConfig:
+      ADMIN_USERNAME: "andreyolv"
+      ADMIN_PASSWORD: "andreyolv"

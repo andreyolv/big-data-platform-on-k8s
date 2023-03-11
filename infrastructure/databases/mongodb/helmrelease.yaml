@@ -22,4 +22,8 @@ spec:
     remediation:
       retries: 5
   values:
+  # https://artifacthub.io/packages/helm/bitnami/mongodb
   # https://github.com/bitnami/charts/blob/main/bitnami/mongodb/values.yaml
+    auth:
+      usernames: andreyolv
+      passwords: andreyolv

@@ -17,3 +17,8 @@ spec:
   install:
     remediation:
       retries: 3
+  values:
+  # https://artifacthub.io/packages/helm/trino/trino
+  # https://github.com/trinodb/charts/blob/main/charts/trino/values.yaml
+  # login: admin
+  # password:

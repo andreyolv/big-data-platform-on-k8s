@@ -40,5 +40,5 @@ spec:
       create: true
       username: admin
       # Change password by generating a new hash on https://bcrypt.online
-      # bcrypt hash for password "flux"
+      # bcrypt hash for password "andreyolv"
       passwordHash: "$2y$10$iayIao/7JBdwGbyClt022uXQS2EvF5tkATd817z80Wdrs1zPw4dSC"
