@@ -19,3 +19,4 @@ spec:
     auth: 
       username: andreyolv
       password: andreyolv
+    # # Login, enter inside container> mysql -u andreyolv -p mysql

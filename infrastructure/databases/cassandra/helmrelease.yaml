@@ -25,4 +25,4 @@ spec:
     dbuser:
       user: andreyolv
       password: andreyolv
-    
+      # Login, enter inside container> cqlsh -u andreyolv -p andreyolv
