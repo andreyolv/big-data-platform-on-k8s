@@ -13,7 +13,7 @@ resources:
   #- kustomization/compliance/sonarqube.yaml
 
   ## Data Engineering
-  - kustomization/data-engineering/airbyte.yaml
+  #- kustomization/data-engineering/airbyte.yaml
   - kustomization/data-engineering/airflow.yaml
   #- kustomization/data-engineering/minio.yaml
   - kustomization/data-engineering/openfaas.yaml
@@ -44,7 +44,7 @@ resources:
   #- kustomization/kubernetes/sealed-secrets.yaml
 
   ## Notebooks
-  - kustomization/notebooks/jupyter.yaml
+  #- kustomization/notebooks/jupyter.yaml
   #- kustomization/notebooks/zeppelin.yaml
 
   ## Observability
@@ -82,12 +82,12 @@ resources:
   #- kustomization/storage/velero.yaml
 
   ## Streaming
-  - kustomization/streaming/kafka.yaml
-  - kustomization/streaming/ksqldb.yaml
+  #- kustomization/streaming/kafka.yaml
+  #- kustomization/streaming/ksqldb.yaml
   - kustomization/streaming/pinot.yaml
   - kustomization/streaming/pulsar.yaml
   #- kustomization/streaming/rabbitmq.yaml
-  - kustomization/streaming/schema-registry.yaml
+  #- kustomization/streaming/schema-registry.yaml
 
   ## Web-app
   #- kustomization/web-app/flagger.yaml

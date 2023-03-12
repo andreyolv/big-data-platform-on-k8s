@@ -8,7 +8,7 @@
   #- kustomization/compliance/sonarqube.yaml | OK
 
   ## Data Engineering
-  #- kustomization/data-engineering/airbyte.yaml
+  #- kustomization/data-engineering/airbyte.yaml | OK
   #- kustomization/data-engineering/airflow.yaml
   #- kustomization/data-engineering/minio.yaml | OK
   #- kustomization/data-engineering/openfaas.yaml
@@ -77,12 +77,12 @@
   #- kustomization/storage/velero.yaml | precisa prencher oq ta no values lá
 
   ## Streaming
-  #- kustomization/streaming/kafka.yaml
-  #- kustomization/streaming/ksqldb.yaml
+  #- kustomization/streaming/kafka.yaml | OK
+  #- kustomization/streaming/ksqldb.yaml | OK
   #- kustomization/streaming/pinot.yaml
   #- kustomization/streaming/pulsar.yaml
   #- kustomization/streaming/rabbitmq.yaml | subiu operator, falta cluster
-  #- kustomization/streaming/schema-registry.yaml
+  #- kustomization/streaming/schema-registry.yaml | OK
 
   ## Web-app
   #- kustomization/web-app/flagger.yaml
