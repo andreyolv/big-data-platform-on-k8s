@@ -20,11 +20,11 @@ spec:
   values:
   # https://artifacthub.io/packages/helm/apache-airflow/airflow
   # https://github.com/apache/airflow/blob/main/chart/values.yaml
-    dags:
-      persistence:
-        enabled: true
-        existingClaim: airflow-fileshare-dags
-    logs:
-      persistence:
-        enabled: true
-        existingClaim: airflow-fileshare-logs
+    #dags:
+    #  persistence:
+    #    enabled: true
+    #    existingClaim: airflow-fileshare-dags
+    #logs:
+    #  persistence:
+    #    enabled: true
+    #    existingClaim: airflow-fileshare-logs
