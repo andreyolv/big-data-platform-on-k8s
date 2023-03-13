@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-kyverno
+  namespace: kyverno
+  labels:
+    app: deployment-kyverno
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: deployment-kyverno
+  template:
+    metadata:
+      labels:
+        app: deployment-kyverno
+    spec:
+      containers:
+      - name: deployment-kyverno
+        image: andreyolv/spark-consumer:latest
+        command:
+        - "sleep"
+        - "3600"
+        resources:
+          requests:
+            cpu: "1"
+            memory: 1Gi
+          limits:
+            cpu: "2"
+            memory: 2Gi
+        imagePullPolicy: Always

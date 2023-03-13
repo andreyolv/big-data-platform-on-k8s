@@ -20,6 +20,12 @@ spec:
   values:
   # https://artifacthub.io/packages/helm/apache-airflow/airflow
   # https://github.com/apache/airflow/blob/main/chart/values.yaml
+    dags:
+      gitSync:
+        enabled: true
+        repo: https://github.com/andreyolv/big-data-platform-on-k8s.git
+        branch: master
+        subPath: "data-projects/dags"
     #dags:
     #  persistence:
     #    enabled: true

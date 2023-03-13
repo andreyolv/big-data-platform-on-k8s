@@ -9,7 +9,7 @@ resources:
   #- kustomization/cicd-iac/terraform.yaml
 
   ## Compliance
-  #- kustomization/compliance/kyverno.yaml
+  - kustomization/compliance/kyverno.yaml
   #- kustomization/compliance/sonarqube.yaml
 
   ## Data Engineering
