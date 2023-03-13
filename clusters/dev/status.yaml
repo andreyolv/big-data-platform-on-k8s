@@ -69,7 +69,7 @@
   #- kustomization/security/falco.yaml
   #- kustomization/security/kube-bench.yaml | estudar CIS Kubernetes Benchmark e security
   #- kustomization/security/kubescape.yaml | please register at https://cloud.armosec.io to get yours and re-run with  --set accountGuid=<your Guid>
-  #- kustomization/security/teleport.yaml | Helm uninstall failed: uninstall: Release not loaded: teleport: release: not found
+  #- kustomization/security/teleport.yaml | habilitar UI
   #- kustomization/security/trivy.yaml | OK
 
   # Storage
@@ -79,8 +79,8 @@
   ## Streaming
   #- kustomization/streaming/kafka.yaml | OK
   #- kustomization/streaming/ksqldb.yaml | OK
-  #- kustomization/streaming/pinot.yaml
-  #- kustomization/streaming/pulsar.yaml
+  #- kustomization/streaming/pinot.yaml | OK
+  #- kustomization/streaming/pulsar.yaml 
   #- kustomization/streaming/rabbitmq.yaml | subiu operator, falta cluster
   #- kustomization/streaming/schema-registry.yaml | OK
 
