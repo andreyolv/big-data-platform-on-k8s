@@ -5,6 +5,7 @@
 
   ## Compliance
   #- kustomization/compliance/kyverno.yaml
+  #- kustomization/compliance/policy-reporter.yaml
   #- kustomization/compliance/sonarqube.yaml | OK
 
   ## Data Engineering
